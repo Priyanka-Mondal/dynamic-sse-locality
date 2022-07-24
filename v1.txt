@@ -1,1 +1,718 @@
 ========Running SDd+OneChoice No OMAP==================
+Index:0 number of Bins:1 size of bin:1 is:1
+Index:1 number of Bins:1 size of bin:2 is:2
+Index:2 number of Bins:2 size of bin:6 is:12
+Index:3 number of Bins:2 size of bin:14 is:28
+Index:4 number of Bins:2 size of bin:24 is:48
+Index:5 number of Bins:3 size of bin:34 is:102
+Index:6 number of Bins:5 size of bin:46 is:230
+Index:7 number of Bins:7 size of bin:58 is:406
+Start of Static
+ 
+ 
+ 
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:1:1:2:3:4:2
+ 
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:1:1:2:3:4:2
+ 
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+5 ciphersize:24 24 nob:1
+5 ciphersize:24 24 nob:1
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+5 ciphersize:24 24 nob:1
+5 ciphersize:24 24 nob:1
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+3 ciphersize:12 12 nob:2
+3 ciphersize:12 12 nob:2
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+5 ciphersize:24 24 nob:1
+5 ciphersize:24 24 nob:1
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+5 ciphersize:24 24 nob:1
+5 ciphersize:24 24 nob:1
+index:4:2:4:6:8:16
+4 ciphersize:14 14 nob:1
+4 ciphersize:14 14 nob:1
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+2 ciphersize:2 2 nob:1
+2 ciphersize:2 2 nob:1
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+ 
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+index:5:2:4:6:9:32
+index:4:2:4:6:8:16
+index:3:2:4:6:8:8
+index:2:1:2:3:5:4
+index:1:1:2:3:4:2
+1 ciphersize:1 1 nob:1
+1 ciphersize:1 1 nob:1
+---------------------
+Result of Operations for DB Size 100
+Search for Keyword With 1 Result and 0 Deletions:
+Search Computation Time (microseconds):21845
+Search Communication Size (Bytes):0
+Number of return item:0
+---------------------
+Result of Operations for DB Size 100
+Search for Keyword With 2 Result and 0 Deletions:
+Search Computation Time (microseconds):2710
+Search Communication Size (Bytes):0
+Number of return item:0
+---------------------
+Result of Operations for DB Size 100
+Search for Keyword With 3 Result and 1 Deletions:
+Search Computation Time (microseconds):10894
+Search Communication Size (Bytes):0
+Number of return item:0
+************

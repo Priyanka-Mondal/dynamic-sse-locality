@@ -112,9 +112,6 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 {
 	for(int i=numOfIndices; i>0; i--)
 	{
-			int t = numberOfBins[i-1];
-			int m = numberOfBins[i];
-			cout <<"index:"<<i<<":"<<t<<":"<<2*t<<":"<<3*t<<":"<<3*t+m<<":"<<pow(2,i)<<endl;
 		if(L->exist[i-1][0] && L->exist[i-1][1])
 		{
 			int t = numberOfBins[i-1];
@@ -122,10 +119,10 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 			cout <<"index:"<<i<<":"<<t<<":"<<2*t<<":"<<3*t<<":"<<3*t+m<<":"<<pow(2,i)<<endl;
 			if(i>3)
 			{
-				assert(2*t+2*m<pow(2,i));
+				assert(3*t+m<pow(2,i));
 				if(0 <= cnt[i] && cnt[i] < t)
 				{
-					L->Phase1(i, cnt[i], 1, keys[i][3], keys[i][0],keys[i][1]);
+					L->Phase1(i, cnt[i], 1, keys[i][3], keys[i][0], keys[i][1]);
 				}
 				else if(t <= cnt[i] && cnt[i] < 2*t)
 				{
@@ -139,9 +136,9 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 				{
 					L->addDummy(i, cnt[i]-3*t, 1, keys[i][3]);
 				}
-				else if (3*t+m <= cnt[i] && cnt[i] <pow(2,i))
+				else if (3*t+m <= cnt[i] && cnt[i] < pow(2,i))
 				{
-					L->deAmortizedBitSort();
+					L->nonOblSort(i, keys[i][3]);
 					//L->deAmortizedBitSort(i, cnt[i]-(3*t+m), keys[i][3]);   
 				}
 			}
@@ -149,14 +146,15 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 			{
 				if(cnt[i] == 0)
 				{
-					L->Phase1(i, 0, numberOfBins[i-1], keys[i][3],keys[i][0],keys[i][1]);
+					L->Phase1(i, 0, numberOfBins[i-1], keys[i][3], keys[i][0], keys[i][1]);
 					L->Phase2(i, 0, numberOfBins[i-1], keys[i][3], keys[i][0], keys[i][1]);
 				}
 				else if (cnt[i] == 1)
 				{
 					L->LinearScanBinCount(i, 0, numberOfBins[i-1], keys[i][3]);
 					L->addDummy(i, 0, numberOfBins[i], keys[i][3]);
-					L->deAmortizedBitSort();
+					L->nonOblSort(i, keys[i][3]);
+					//L->deAmortizedBitSort();
 				}
 			}
 			cnt[i] = cnt[i]+1;

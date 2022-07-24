@@ -34,10 +34,9 @@ OneChoiceSDdNoOMAPClient::OneChoiceSDdNoOMAPClient(int N,	bool inMemory, bool ov
 	exist.resize(numOfIndices+1);
 	setk.resize(numOfIndices+1);
 	P.resize(numOfIndices+1);
-	Bins.resize(numOfIndices);
+	Bins.resize(numOfIndices+1);
     for (int i = 0; i <=numOfIndices; i++) 
 	{
-        //exist.push_back(vector<bool>());
 		exist[i].resize(4);
 		setk[i].resize(4);
     	for (int j = 0; j < 4; j++) 
@@ -54,12 +53,6 @@ OneChoiceSDdNoOMAPClient::OneChoiceSDdNoOMAPClient(int N,	bool inMemory, bool ov
         P.push_back(unordered_map<string, int>());
     }
 	exist[0][3] = true;
-    for (int i = 0; i <=numOfIndices; i++) 
-	{
-        bytes<Key> key{0};
-        //OMAP* omap = new OMAP(max((int) pow(2, i+2), 16), key);
-        //omaps.push_back(omap);
-    }
 }
 
 int issorted(vector<prf_type> A)
@@ -189,6 +182,11 @@ void OneChoiceSDdNoOMAPClient::move(int index, int toInstance, int fromInstance)
 		numNEW[index] = numNEW[index] + 1;
 		NEWsize[index] = 0;
 		KWsize[index] = 0;
+		P[index] = unordered_map<string, int>();
+    	for (int j = 0; j < numberOfBins[index]; j++) 
+		{
+        	Bins[index][j] = 0;
+    	}
 	}
 }
 
@@ -215,14 +213,14 @@ void OneChoiceSDdNoOMAPClient::destroy(int index, int instance)
 {
     server->clear(index, instance);
     exist[index][instance] = false;
-	//delete omaps[index];
-    //bytes<Key> key{0};
-    //OMAP* omap = new OMAP(max((int) pow(2, index+2), 16), key);
-    //omaps[index]=omap;
 	if(instance == 3)
 	{
 		NEWsize[index]=0;
 		KWsize[index]=0;
+   	    for (int j = 0; j < numberOfBins[index]; j++) 
+   	    {
+   	        Bins[index][j] = 0;
+   	    }
 	}
 }
 void OneChoiceSDdNoOMAPClient::resize(int index, int size)
@@ -231,50 +229,6 @@ void OneChoiceSDdNoOMAPClient::resize(int index, int size)
 	NEWsize[index]=size;
 }
 
-void OneChoiceSDdNoOMAPClient::getBin(int index, int instance, int start, int end,
-							 unsigned char* key1, unsigned char* key2)
-{
-	assert(index>=1);
-	if(start <numberOfBins[index-1]*sizeOfEachBin[index-1])
-	{
-	//cout <<"["<<index-1<<" start:"<<start<<" numOfEl:"<<end<<"]"<<"actual numOfEl:"<<numberOfBins[index-1]*sizeOfEachBin[index-1];
-		if(start+end>numberOfBins[index-1]*sizeOfEachBin[index-1])
-			end = numberOfBins[index-1]*sizeOfEachBin[index-1] - start;
-		vector<prf_type> ciphers = server->getElements(index-1, instance, start, end);
-		assert(ciphers.size() == end);
-		int upCnt = numNEW[index];
-		int cntw=0;
-		for(prf_type c: ciphers)
-		{
-	        prf_type plaintext;// = c;
-	        Utilities::decode(c, plaintext, key1);
-	        int ind = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 5]));
-	        int op = ((byte) plaintext.data()[AES_KEY_SIZE - 6]); 
-	        int oldbin = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 11]));
-	        string w((char*) plaintext.data());
-			int cnt;
-			//if(w!="")
-				//cnt = stoi(omaps[index]->incrementCnt(getBid(w, upCnt)));
-			//else
-				cnt = cntw++;
-			int bin = hashKey(w, cnt, index, key2);		
-			int realbin = bin;
-	    	prf_type keyVal;
-    		memset(keyVal.data(), 0, AES_KEY_SIZE);
-	    	std::copy(w.begin(), w.end(), keyVal.begin());//keyword
-	    	*(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = ind; 
-	    	keyVal.data()[AES_KEY_SIZE - 6] = (byte) (op == 0 ? OP::INS : OP::DEL);//op
-	    	*(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = realbin;//bin
-			append(index, keyVal, key2);
-			if(w!="")
-			{
-				//string ob = omaps[index]->incrementCnt(getBid(to_string(realbin),upCnt));
-				//string ob2 = omaps[index]->find(getBid(to_string(realbin),upCnt));
-				//cout <<"incremented OMAP:"<<ob<<" to "<< ob2<<" upcnt:"<<upCnt<<" for bin:"<<realbin<<endl;
-			}
-		}
-	}
-}
 void OneChoiceSDdNoOMAPClient::addDummy(int index, int count, unsigned char* key , int s, int r1, int r2)
 {
 	cout<<"adding dummy at:"<<index<<":"<<NEWsize[index]<<"|"<<2*numberOfBins[index-1]*sizeOfEachBin[index-1]<<"s:"<<s<<endl;
@@ -800,72 +754,77 @@ int OneChoiceSDdNoOMAPClient::getNEWsize(int index)
 
 void OneChoiceSDdNoOMAPClient::Phase1(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key0, unsigned char* key1)
 {
+	unordered_map<string, int> pIndex = P[index];
 	for(int instance = 0; instance < 2; instance++)
 	{
 		int start = binNumber*sizeOfEachBin[index-1];
 		int numOfElements = numberOfBins*sizeOfEachBin[index-1];
 		vector<prf_type> ciphers = server->getElements(index-1, instance, start, numOfElements);
 		assert(ciphers.size() == numOfElements);
-		int upCnt = numNEW[index];
 		unsigned char* key = (instance == 0) ? key0 : key1;
-		//unordered_map<string,vector<prf_type>> kwFid;
-		set<string> setw;
-		unordered_map<string, int> pIndex = P[index];
+		vector<string> setw;
+		vector<prf_type> prfsetw;
 		for(prf_type c: ciphers)
 		{
 			prf_type plaintext=c;
 		    //Utilities::decode(c, plaintext, key);  //UNcomment it later
-			int ind = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 5]));
-			int op = ((byte) plaintext.data()[AES_KEY_SIZE - 6]); 
-			int oldbin = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 11]));
 			int cntw = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 16]));
 			string w((char*) plaintext.data());
+			setw.push_back(w);
+			prfsetw.push_back(plaintext);
 			if(cntw == 1)
 				setk[index][instance].insert(w);
-			//kwFid[w].push_back(plaintext);
-			setw.insert(w);
-			vector<string> temp(setk[index][instance].size());
-			vector<string>::iterator it, diff1;
-			int otherInstance = (instance+1)%2;
-			diff1 = std::set_difference(setk[index][instance].begin(), setk[index][instance].end(), setw.begin(), setw.end(), temp.begin());
-			for(it = temp.begin(); it!=diff1; ++it)
+		}
+		vector<string> temp(setk[index][instance].size());
+		vector<string>::iterator diff1;
+		diff1 = std::set_difference(setk[index][instance].begin(), setk[index][instance].end(), setw.begin(), setw.end(), temp.begin());
+		int otherInstance = (instance+1)%2;
+		for(auto it = temp.begin(); it != diff1; ++it)
+		{
+			setk[index][instance].erase(*it);
+			if(setk[index][otherInstance].find(*it) == setk[index][otherInstance].end())
 			{
-				setk[index][instance].erase(*it);
-				if(setk[index][otherInstance].find(*it) == setk[index][otherInstance].end())
-				{
-					pIndex.erase(*it);
-					// write *it to disk
-				}
+	   			prf_type keyVal;
+    			memset(keyVal.data(), 0, AES_KEY_SIZE);
+	   			std::copy((*it).begin(), (*it).end(), keyVal.begin());
+	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = pIndex[*it]; 
+	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = pIndex[*it];//here goes the PRP later
+				appendTokwCounter(index, keyVal, keynew);
+				pIndex.erase(*it);
 			}
-			for(string kw : setk[index][instance])
+		}
+		for(int p = 0 ; p < setw.size() ; p++)
+		{
+			if(setk[index][instance].find(setw[p]) != setk[index][instance].end())
 			{
-				int cntkw = pIndex[kw]+1;	
-				pIndex[kw]= cntkw;
-				int newbin = hashKey(kw, cntkw, index, keynew);
+				int cntkw = pIndex[setw[p]]+1;	
+				pIndex[setw[p]]= cntkw;
+				int ind = *(int*) (&(prfsetw[p].data()[AES_KEY_SIZE - 5]));
+				int op = ((byte) prfsetw[p].data()[AES_KEY_SIZE - 6]); 
+				int newbin = hashKey(setw[p], cntkw, index, keynew);
 				prf_type keyVal;
-				createKeyVal(kw, ind, op, cntkw, newbin, keyVal);
+				createKeyVal(setw[p], ind, op, cntkw, newbin, keyVal);
 				append(index, keyVal, keynew);
 			}
-
 		}
-		P[index] = pIndex;
 	}
+	P[index] = pIndex;
 }
 
 void OneChoiceSDdNoOMAPClient::Phase2(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key0, unsigned char* key1)
 {
+	unordered_map<string, int> pIndex = P[index];
 	for(int instance = 0; instance < 2; instance++)
 	{
 		int start = binNumber*sizeOfEachBin[index-1];
 		int numOfElements = numberOfBins*sizeOfEachBin[index-1];
 		vector<prf_type> ciphers = server->getElements(index-1, instance, start, numOfElements);
 		cout <<index<<" ciphersize:"<<ciphers.size()<<" "<<numOfElements<<" nob:"<<numberOfBins<<endl;
-		//assert(ciphers.size() == numOfElements);
-		int upCnt = numNEW[index];
+		assert(ciphers.size() == numOfElements);
 		unsigned char* key = (instance == 0) ? key0 : key1;
-		unordered_map<string,vector<prf_type>> kwFid;
-		set<string> setw1, setw;
-		unordered_map<string, int> pIndex = P[index];
+		set<string> setw1;
+		vector<string> setw;
+		vector<prf_type> prfsetw;
 		for(prf_type c: ciphers)
 		{
 			prf_type plaintext=c;
@@ -878,37 +837,46 @@ void OneChoiceSDdNoOMAPClient::Phase2(int index, int binNumber, int numberOfBins
 			if(cntw == 1)
 				setw1.insert(w);
 			else 
-				setw.insert(w);
-			vector<string>::iterator it, diff1;
-			unordered_map<string, int> pIndex = P[index];
-			vector<string> temp(setw.size());
-			int otherInstance = (instance+1)%2;
-			diff1 = std::set_difference(setw.begin(), setw.end(), setw1.begin(), setw1.end(), temp.begin());
-			//for(it = temp.begin(); it!=diff1; ++it)
-			for(auto kw = setk[index][instance].begin(); kw != setk[index][instance].end(); kw++)
 			{
-				if(find(temp.begin(), temp.end(), *kw) != temp.end())
-				{
-					int cntkw = pIndex[*kw]+1;	
-					pIndex[*kw]= cntkw;
-					int newbin = hashKey(*kw, cntkw, index, keynew);
-					prf_type keyVal;
-					createKeyVal(*kw, ind, op, cntkw, newbin, keyVal);
-					append(index, keyVal, keynew);
-				}
-				else
-				{
-					setk[index][instance].erase(*kw);
-					if(setk[index][otherInstance].find(*kw) == setk[index][otherInstance].end())
-					{
-						pIndex.erase(*kw);
-						// write *it to disk
-					}
-				}
+				setw.push_back(w);
+				prfsetw.push_back(plaintext);
 			}
 		}
-		P[index] = pIndex;
+		vector<string> temp(setw.size());
+		vector<string>::iterator diff1;
+		diff1 = std::set_difference(setw.begin(), setw.end(), setw1.begin(), setw1.end(), temp.begin());
+		int otherInstance = (instance+1)%2;
+		for(auto kw : temp )
+		{
+			if(setk[index][instance].find(kw) != setk[index][instance].end())
+			{
+				int cntkw = pIndex[kw]+1;	
+				pIndex[kw]= cntkw;
+				int newbin = hashKey(kw, cntkw, index, keynew);
+				prf_type keyVal; // how do I get these??
+				//createKeyVal(*kw, ind, op, cntkw, newbin, keyVal);
+				append(index, keyVal, keynew);
+			}
+		}
+		vector<string> temp2(setk[index][instance].size());
+		vector<string>::iterator diff2;
+		diff2 = std::set_difference(setk[index][instance].begin(), setk[index][instance].end(), setw.begin(), setw.end(), temp2.begin());
+		for(auto it = temp2.begin(); it != diff2; ++it)
+		{
+			setk[index][instance].erase(*it);
+			if(setk[index][otherInstance].find(*it) == setk[index][otherInstance].end())
+			{
+	   			prf_type keyVal;
+    			memset(keyVal.data(), 0, AES_KEY_SIZE);
+	   			std::copy((*it).begin(), (*it).end(), keyVal.begin());
+	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = pIndex[*it]; 
+	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = pIndex[*it];//here goes the PRP later
+				appendTokwCounter(index, keyVal, keynew);
+				pIndex.erase(*it);
+			}
+		}
 	}
+	P[index] = pIndex;
 }
 
 void OneChoiceSDdNoOMAPClient::LinearScanBinCount(int index, int binNumber, int numOfBins, unsigned char* key)
@@ -927,19 +895,19 @@ void OneChoiceSDdNoOMAPClient::LinearScanBinCount(int index, int binNumber, int 
 
 void OneChoiceSDdNoOMAPClient::addDummy(int index, int bin, int numOfBins, unsigned char* key)
 {
-	for(int b = bin; b < bin+numOfBins; b++)
+	for(int b = bin ; b < bin+numOfBins ; b++)
 	{
 		int cbin = Bins[index][b];
-		for(int k = cbin; k<sizeOfEachBin[index]; k++)
+		for(int k = cbin ; k < sizeOfEachBin[index] ; k++)
 		{
 			prf_type value;
 	    	memset(value.data(), 0, AES_KEY_SIZE);
 	    	*(int*) (&(value.data()[AES_KEY_SIZE - 5])) = INF;//dummy-id
 			value.data()[AES_KEY_SIZE - 6] = (byte) (OP::INS);//op
-	    	*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = INF;//bin
+	    	*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = b;//bin
 			append(index, value, key); 
 		}
-		for(int k = 0; k<cbin ; k++)
+		for(int k = 0; k < cbin ; k++)
 		{ 
 			prf_type value;
 	    	memset(value.data(), 0, AES_KEY_SIZE);
@@ -949,10 +917,9 @@ void OneChoiceSDdNoOMAPClient::addDummy(int index, int bin, int numOfBins, unsig
 			append(index, value, key);
 		}
 	}
-	if(bin == numberOfBins[index]-1)
+	if((bin == numberOfBins[index]-1) || (index <= 3))
 	{
-		int actualIndexSize = NEWsize[index];
-		int powOf2Size = pow(2, ceil((float)log2(actualIndexSize))); 
+		int powOf2Size = pow(2, ceil((float)log2(NEWsize[index]))); 
 		pad(index, powOf2Size, key);
 	}
 }
