@@ -32,7 +32,7 @@ prf_type OneChoiceSDdNoOMAPServer::findCounter(int dataIndex, int instance, prf_
     prf_type res = keyworkCounters->find(dataIndex, instance, token, found);
 	return res;
 }
-vector<prf_type> OneChoiceSDdNoOMAPServer::search(int dataIndex, int instance, prf_type token, int & keywordCnt)
+vector<prf_type> OneChoiceSDdNoOMAPServer::search(int dataIndex, int instance, prf_type token, int keywordCnt)
 {
     vector<prf_type> result;
     keyworkCounters->seekgCount = 0;
@@ -40,13 +40,11 @@ vector<prf_type> OneChoiceSDdNoOMAPServer::search(int dataIndex, int instance, p
     double keywordCounterTime = 0, serverSearchTime = 0;
     if (profile) 
         Utilities::startTimer(35);
-    prf_type curToken = token;
     unsigned char cntstr[AES_KEY_SIZE];
     memset(cntstr, 0, AES_KEY_SIZE);
     *(int*) (&(cntstr[AES_KEY_SIZE - 5])) = -1;
     prf_type keywordMapKey = Utilities::generatePRF(cntstr, token.data());
-    bool found = false;
-    prf_type res = keyworkCounters->find(dataIndex, instance, keywordMapKey, found);
+    result = storage->find(dataIndex, instance, keywordMapKey, keywordCnt);
     /*if (profile) 
 	{
         keywordCounterTime = Utilities::stopTimer(35);
@@ -54,22 +52,13 @@ vector<prf_type> OneChoiceSDdNoOMAPServer::search(int dataIndex, int instance, p
 	   	cout<<"number of SeekG:"<<keyworkCounters->seekgCount<<endl;
 	   	cout<<"number of read bytes:"<<keyworkCounters->KEY_VALUE_SIZE * keyworkCounters->seekgCount<<endl;
         Utilities::startTimer(45);
-    }*/
-    if (found) 
-	{
-        prf_type plaintext;
-        Utilities::decode(res, plaintext, token.data());
-        keywordCnt = *(int*) (&(plaintext[0]));
-		//cout <<"keyw cont at:"<<dataIndex<<","<<instance<<":"<<keywordCnt<<endl;
-        result = storage->find(dataIndex, instance, keywordMapKey, keywordCnt);
-        /*if (profile) 
-		{
-            serverSearchTime = Utilities::stopTimer(45);
-            cout<<"server Search Time:"<<serverSearchTime <<endl;
-			cout<<"number of SeekG:"<<storage->SeekG<<" number of read bytes:"<<storage->readBytes<<endl;
-        }*/
     }
-	
+    if (profile) 
+	{
+        serverSearchTime = Utilities::stopTimer(45);
+        cout<<"server Search Time:"<<serverSearchTime <<endl;
+		cout<<"number of SeekG:"<<storage->SeekG<<" number of read bytes:"<<storage->readBytes<<endl;
+    }*/
     return result;
 }
 
@@ -145,6 +134,25 @@ vector<pair<prf_type,prf_type>> OneChoiceSDdNoOMAPServer::getCounters(int index,
 	return keyworkCounters->getAll(index,0) ;
 }
 */
+int OneChoiceSDdNoOMAPServer::getCounter(int dataIndex, int instance, prf_type tokkw) 
+{
+    prf_type curToken = tokkw;
+    unsigned char cntstr[AES_KEY_SIZE];
+    memset(cntstr, 0, AES_KEY_SIZE);
+    *(long*) (&(cntstr[AES_KEY_SIZE - 5])) = -1;
+    prf_type keywordMapKey = Utilities::generatePRF(cntstr, curToken.data());
+    bool found = false;
+    prf_type res = keyworkCounters->find(dataIndex, instance, keywordMapKey, found);
+	int keywordCnt = 0;
+    if (found) 
+    {
+        prf_type plaintext;
+        Utilities::decode(res, plaintext, curToken.data());
+        keywordCnt = *(long*) (&(plaintext[0]));
+	}
+	return keywordCnt;
+}
+
 int OneChoiceSDdNoOMAPServer::writeToNEW(int index, prf_type keyVal, int pos)
 {
 	int last = storage->writeToNEW(index, keyVal, pos);

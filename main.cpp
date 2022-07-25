@@ -82,11 +82,11 @@ int main(int argc, char** argv) {
         if (overwrite) {
             //Inserting the test cases (keyword,file) pairs
             for (auto cur = testCases[i].filePairs.begin(); cur != testCases[i].filePairs.end(); cur++) {
-                for (unsigned int j = 0; j < cur->second.size(); j++) {
-									cout <<" "<<endl;
+                for (unsigned int j = 0; j < cur->second.size(); j++) 
+				{
                     client.update(OP::INS, cur->first, cur->second[j], true);
                     cnt++;
-                    if (cnt % 10000 == 0) {
+                    if (cnt % 100 == 0) {
                         cout << "Initial Insertion:" << cnt << "/" << to_string(testCases[i].N) << endl;
                     }
                 }

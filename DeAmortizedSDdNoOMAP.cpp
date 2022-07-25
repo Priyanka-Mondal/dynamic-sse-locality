@@ -33,7 +33,7 @@ DeAmortizedSDdNoOMAP::DeAmortizedSDdNoOMAP(int N, bool inMemory, bool overwrite)
     for (int i = 0; i <= numOfIndices; i++) 
 	{
         keys.push_back(vector<unsigned char*> ());
-    	for (int j = 0; j < 4; j++) 
+    	for (int j = 0; j < 2; j++) 
 		{
             unsigned char* tmpKey = new unsigned char[16];
             keys[i].push_back(tmpKey);
@@ -67,9 +67,12 @@ DeAmortizedSDdNoOMAP::DeAmortizedSDdNoOMAP(int N, bool inMemory, bool overwrite)
             	if (data == "true") 
 	    		{
                 	L->exist[i][j] = true;
-                	unsigned char* newKey = new unsigned char[16];
-                	memset(newKey, 0, 16);
-                	keys[i][j] = newKey;
+					if(j<2)
+					{
+						unsigned char* newKey = new unsigned char[16];
+						memset(newKey, 0, 16);
+						keys[i][j] = newKey;
+					}
             	} 
 				else 
 	    		{
@@ -116,113 +119,102 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 		{
 			int t = numberOfBins[i-1];
 			int m = numberOfBins[i];
-			cout <<"index:"<<i<<":"<<t<<":"<<2*t<<":"<<3*t<<":"<<3*t+m<<":"<<pow(2,i)<<endl;
+		//cout<<"i:"<<i<<":"<<t<<":"<<2*t<<":"<<2*t+pow(2,(i-1))<<":"<<2*t+(pow(2,(i-1)))+m<<":"<<pow(2,i)<<endl;
 			if(i>3)
 			{
-				assert(3*t+m<pow(2,i));
+				assert(2*t+pow(2,i-1)+m<pow(2,i));
 				if(0 <= cnt[i] && cnt[i] < t)
 				{
-					L->Phase1(i, cnt[i], 1, keys[i][3], keys[i][0], keys[i][1]);
+					L->Phase1(i, cnt[i], 1, keys[i][1], keys[i-1][0]);
 				}
 				else if(t <= cnt[i] && cnt[i] < 2*t)
 				{
-					L->Phase2(i, cnt[i]-t, 1, keys[i][3], keys[i][0], keys[i][1]);
+					L->Phase2(i, cnt[i]-t, 1, keys[i][1], keys[i-1][0]);
 				}
-				else if (2*t <= cnt[i] && cnt[i] < 3*t)
+				else if (2*t <= cnt[i] && cnt[i] < 2*t+pow(2,i-1))
 				{
-					L->LinearScanBinCount(i, cnt[i]-2*t, 1, keys[i][3]);
+					L->LinearScanBinCount(i, cnt[i]-2*t, 1, keys[i][1]);
 				}
-				else if(3*t <= cnt[i] && cnt[i] < 3*t+m)
+				else if(2*t+pow(2,i-1) <= cnt[i] && cnt[i] < 2*t+pow(2,i-1)+m)
 				{
-					L->addDummy(i, cnt[i]-3*t, 1, keys[i][3]);
+					L->addDummy(i, cnt[i]-(2*t+pow(2,i-1)), 1, keys[i][1]);
 				}
-				else if (3*t+m <= cnt[i] && cnt[i] < pow(2,i))
+				else if (2*t+pow(2,i-1)+m <= cnt[i] && cnt[i] < pow(2,i))
 				{
-					L->nonOblSort(i, keys[i][3]);
-					//L->deAmortizedBitSort(i, cnt[i]-(3*t+m), keys[i][3]);   
+					L->nonOblSort(i, keys[i][1]);
+					//L->deAmortizedBitSort(i, cnt[i]-(3*t+m), keys[i][1]);   
 				}
 			}
 			else if(i<=3)
 			{
 				if(cnt[i] == 0)
 				{
-					L->Phase1(i, 0, numberOfBins[i-1], keys[i][3], keys[i][0], keys[i][1]);
-					L->Phase2(i, 0, numberOfBins[i-1], keys[i][3], keys[i][0], keys[i][1]);
+					L->Phase1(i, 0, numberOfBins[i-1], keys[i][1], keys[i-1][0]);
+					L->Phase2(i, 0, numberOfBins[i-1], keys[i][1], keys[i-1][0]);
 				}
 				else if (cnt[i] == 1)
 				{
-					L->LinearScanBinCount(i, 0, numberOfBins[i-1], keys[i][3]);
-					L->addDummy(i, 0, numberOfBins[i], keys[i][3]);
-					L->nonOblSort(i, keys[i][3]);
+					L->LinearScanBinCount(i, 0, numberOfBins[i-1], keys[i][1]);
+					L->addDummy(i, 0, numberOfBins[i], keys[i][1]);
+					L->nonOblSort(i, keys[i][1]);
 					//L->deAmortizedBitSort();
 				}
 			}
 			cnt[i] = cnt[i]+1;
 			if(cnt[i] == pow(2,i))
 			{
-				//L->updateHashTable(i, keys[i][3]);
+				L->updateHashTable(i, keys[i][1]);
 				L->resize(i,indexSize[i]); 
 				L->move(i-1,0,2); 
-				updateKey(i-1,0,2);
+				updateKey(i-1,0,1);
 				L->destroy(i-1,1);
 				if(!(L->exist[i][0]))
 				{
 					L->move(i,0,3);
-					updateKey(i,0,3);
+					updateKey(i,0,1);
 				}
 				else if(!(L->exist[i][1]))
 				{
 					L->move(i,1,3);
-					updateKey(i,1,3);
+					updateKey(i,0,1);
+					unsigned char* newKey = new unsigned char[16];
+					memset(newKey, 0, 16);
+					keys[i][1] = newKey;
 				}
 				else
 				{
 					L->move(i,2,3);
-					updateKey(i,2,3);
+					//updateKey(i,1,1);
 				}
 				//L->destroy(i,3);
-    	    	unsigned char* newKey = new unsigned char[16];
-    	    	memset(newKey, 0, 16);
-    	    	keys[i][3] = newKey;
 				cnt[i] = 0;
 			}
 		}
 	}
 	prf_type keyVal;
-	L->createKeyVal(keyword, ind, op, 0, 1, keyVal);
-	L->append(0, keyVal, keys[0][3]);
-	L->updateOMAP(0,keyword, keys[0][3]);
-	L->updateCounters(0, keys[0][3]);
+	L->createKeyVal(keyword, ind, op, 1, 0, keyVal);
+	L->append(0, keyVal, keys[0][1]);
+	L->updateCounters(keyword, keys[0][1]);
 	if(!(L->exist[0][0]))
 	{
 		L->move(0,0,3);
-		updateKey(0,0,3);
+		updateKey(0,0,1);
 	}
 	else if(!(L->exist[0][1]))
 	{
 		L->move(0,1,3);
-		updateKey(0,1,3);
+		updateKey(0,0,1);
+		unsigned char* newKey = new unsigned char[16];
+		memset(newKey, 0, 16);
+		keys[0][1] = newKey;
 	}
 	else
 	{
 		L->move(0,2,3);
-		updateKey(0,2,3);
+		//updateKey(0,1,1);
 	}
 	//L->destroy(0,3);
-    unsigned char* newKey = new unsigned char[16];
-    memset(newKey, 0, 16);
-    keys[0][3] = newKey;
     updateCounter++;
-}
-
-void DeAmortizedSDdNoOMAP::createKeyVal(string keyword, int ind, OP op, prf_type& keyVal)
-{
-    memset(keyVal.data(), 0, AES_KEY_SIZE);
-    std::copy(keyword.begin(), keyword.end(), keyVal.begin());//keyword
-    *(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = ind;//fileid
-    keyVal.data()[AES_KEY_SIZE - 6] = (byte) (op == OP::INS ? 0 : 1);//op
-    *(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = 0;//index 0 has only bin 0
-	*(int*) (&(keyVal.data()[AES_KEY_SIZE - 16])) = 1; // counter is 1
 }
 
 void DeAmortizedSDdNoOMAP::updateKey(int index, int toInstance , int fromInstance)
@@ -267,35 +259,41 @@ vector<int> DeAmortizedSDdNoOMAP::search(string keyword)
 	{
     	for (int j = 0; j < 3; j++) 
 		{
-				//cout <<"searching at:["<<i<<"]["<<j<<"]"<<endl;
             if (L->exist[i][j]) 
 			{
-                auto tmpRes = L->NIsearch(i, j, keyword, keys[i][j]);
+				//cout <<"searching at:["<<i<<"]["<<j<<"]"<<endl;
+				int k = j == 2? 1 : 0;
+                auto tmpRes = L->search(i, j, keyword, keys[i][k]);
                 encIndexes.insert(encIndexes.end(), tmpRes.begin(), tmpRes.end());
             }
         }
     }
     map<int, int> remove;
+	map<int, int> add;
 	int ressize = 0;
     for (auto i = encIndexes.begin(); i != encIndexes.end(); i++) 
 	{
         prf_type decodedString = *i;
         int id = *(int*) (&(decodedString.data()[AES_KEY_SIZE - 5]));
         int op = ((byte) decodedString.data()[AES_KEY_SIZE - 6]);
-        remove[id] += (2 *op - 1);
+		if(op == 0)
+			add[id] = -1;
+		if(op == 1)
+			remove[id] = 1;
+		add[id]=add[id]+remove[id];
+        //remove[id] += (2 *op - 1);
 	    if ((strcmp((char*) decodedString.data(), keyword.data()) == 0)) 
+		{
 			ressize++;
+			cout <<"("<<id<<":"<<op<<")";
+		}
     }
-	//cout <<"size of remove:"<<remove.size()<<endl;
-	int r = 1;
-    for (auto const& cur : remove) 
+	cout <<endl<<"size of add:"<<add.size()<<"/"<<ressize<<endl;
+    for (auto const& cur : add) 
 	{
-		//cout <<r<<":"<<cur.first <<"::"<<cur.second<<endl;
-		//r++;
         if (cur.second < 0) 
 		{
-			for(int i = 0; i<abs(cur.second); i++)
-            	finalRes.emplace_back(cur.first);
+            finalRes.emplace_back(cur.first);
 		}
     }
     totalSearchCommSize += L->totalCommunication;

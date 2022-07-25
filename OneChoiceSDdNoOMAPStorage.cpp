@@ -215,7 +215,7 @@ int OneChoiceSDdNoOMAPStorage::writeToNEW(int index, prf_type keyVal, int pos)
     if (file.fail()) 
         cerr << "Error in writeToNEW: " << strerror(errno);
     int seek = AES_KEY_SIZE*pos;
-    file.seekg(seek, ios::beg);//
+    file.seekg(seek, ios::beg);
 	SeekG++;
     unsigned char newRecord[AES_KEY_SIZE];
     memset(newRecord, 0, AES_KEY_SIZE);
@@ -322,9 +322,6 @@ vector<prf_type> OneChoiceSDdNoOMAPStorage::searchBin(int index, int instance, i
     char* keyValues = new char[readLength];
     file.read(keyValues, readLength);
     readBytes += readLength;
-	//cout <<"index:"<<index<<" bin:"<<bin<<" sizeOfBin:"<<sizeOfEachBin[index]<<endl;
-	//cout <<"readPos:"<<readPos<<" readLen:"<<readLength<<" totalsize:"<< AES_KEY_SIZE*sizeOfEachBin[index]*numberOfBins[index]<<endl;
-	//cout<<"rem:"<<remainder<<" read len:"<<readLength<<endl;
 	assert(readLength>=AES_KEY_SIZE);
     for (int i = 0; i < readLength / AES_KEY_SIZE; i++) 
 	{

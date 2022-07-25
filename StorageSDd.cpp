@@ -69,8 +69,8 @@ void StorageSDd::insert(int dataIndex, int instance, map<prf_type, prf_type> cip
 
                 fstream file(filenames[dataIndex][instance].c_str(), ios::binary | ios::in | ios::out | ios::ate);
                 if (file.fail()) 
-		{
-		    cout <<"xx:"<<dataIndex<<endl;
+				{
+					cout <<"xx:"<<dataIndex<<endl;
                     cerr << "[Error in insert: " << strerror(errno)<<"]"<<endl;
                 }
                 int tmpNextPos = file.tellp();

@@ -37,8 +37,9 @@ public:
 	int writeToNEW(int index, prf_type keyVal, int pos);
 	void moveNEW(int index, int toInstance, int size);
 	void truncate(int index, int size, int filesize);
-    vector<prf_type> search(int dataIndex, int instance, prf_type token, int & keywordCnt);
+    vector<prf_type> search(int dataIndex, int instance, prf_type token, int keywordCnt);
 	int writeToKW(int index, prf_type keyVal, int pos);
+	int getCounter(int dataIndex, int instance, prf_type tokkw);
     //void storeCiphers(int dataIndex, int instance, vector<vector<pair<prf_type, prf_type> > > ciphers, map<prf_type, prf_type> keywordCounters);
 };
 

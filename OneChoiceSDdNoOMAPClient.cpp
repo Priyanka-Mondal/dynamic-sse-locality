@@ -77,6 +77,7 @@ int issortedC(vector<prf_type> A)
 	}
 	return 1;
 }
+
 vector<prf_type> OneChoiceSDdNoOMAPClient::search(int index, int instance, string keyword, unsigned char* key) 
 {
     double searchPreparation = 0, searchDecryption = 0;
@@ -84,75 +85,26 @@ vector<prf_type> OneChoiceSDdNoOMAPClient::search(int index, int instance, strin
         Utilities::startTimer(65);
     vector<prf_type> finalRes;
     int keywordCnt = 0;
-	int cnt = 0;
-	int flag = 0;
-	string kw = keyword;
-	int cntw = 0;
-	do
-	{
-		int bin = hashKey(kw, cntw, index, key);
-		cntw++;
-    	vector<prf_type> ciphers = server->searchBin(index, instance, bin);
-		flag = 0;
-    	totalCommunication += ciphers.size() * sizeof (prf_type) ;
-	    for (auto item : ciphers) 
-		{
-	        prf_type plaintext = item;
-	        Utilities::decode(item, plaintext, key);
-	       	if (strcmp((char*) plaintext.data(), keyword.data()) == 0) 
-			{
-	           	finalRes.push_back(plaintext);
-				flag =1;
-				//int op = ((byte) plaintext.data()[AES_KEY_SIZE - 6]);
-				//cout<<" MATCH:"<<plaintext.data()<<" op:"<<op<<" bin:"<<bin<<" index:"<<index<<endl;
-	       	}
-		}
-		if(bin == numberOfBins[index]-1)
-			bin = 0;
-		else
-			bin++;
-		cnt++;
-	}
-	while(flag == 1 && cnt < numberOfBins[index]);
-    if (profile) 
-	{
-        searchPreparation = Utilities::stopTimer(65);
-        //printf("search preparation time:%f include server time\n", searchPreparation);
-        Utilities::startTimer(65);
-    }
-
-    if (profile) 
-	{
-        searchDecryption = Utilities::stopTimer(65);
-        //cout<<"search decryption time:"<<searchDecryption<<" for decrypting:"<<ciphers.size()<<" ciphers"<<endl;
-    }
-    return finalRes;
-}
-
-vector<prf_type> OneChoiceSDdNoOMAPClient::NIsearch(int index, int instance, string keyword, unsigned char* key) 
-{
-    double searchPreparation = 0, searchDecryption = 0;
-    if (profile) 
-        Utilities::startTimer(65);
-    vector<prf_type> finalRes;
-    int keywordCnt = 0;
 	prf_type K = Utilities::encode(keyword, key);
-	int keywordCount = 0;
-	vector<prf_type> ciphers = server->search(index, instance, K, keywordCount);
-	totalCommunication += ciphers.size() * sizeof (prf_type) ;
-	for (auto item : ciphers) 
+	int keywordCount = server->getCounter(index, instance, K);
+	if(keywordCount>0)
 	{
-	    prf_type plaintext = item;
-	    Utilities::decode(item, plaintext, key);
-	   	if (strcmp((char*) plaintext.data(), keyword.data()) == 0) 
+		cout <<index<<" keywordCount:"<<keywordCount<<endl;
+		vector<prf_type> ciphers = server->search(index, instance, K, keywordCount);
+		totalCommunication += ciphers.size() * sizeof (prf_type) ;
+		for (auto item : ciphers) 
 		{
-	       	finalRes.push_back(plaintext);
-	        int ind = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 5]));
-			int op = ((byte) plaintext.data()[AES_KEY_SIZE - 6]);
-			//cout<<" MATCH:"<<plaintext.data()<<" op:"<<op<<" id:"<<ind<<" index:"<<index<<endl;
-	   	}
+			prf_type plaintext = item;
+			Utilities::decode(item, plaintext, key);
+			if (strcmp((char*) plaintext.data(), keyword.data()) == 0) 
+			{
+	   	    	finalRes.push_back(plaintext);
+		        int ind = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 5]));
+	   	 	    int op = ((byte) plaintext.data()[AES_KEY_SIZE - 6]);
+				//cout <<"MATCH:["<<plaintext.data()<<" ind:"<<ind<<" op:"<<op<<endl;
+	   		}
+		}
 	}
-
     if (profile) 
 	{
         searchPreparation = Utilities::stopTimer(65);
@@ -171,7 +123,6 @@ vector<prf_type> OneChoiceSDdNoOMAPClient::NIsearch(int index, int instance, str
 
 void OneChoiceSDdNoOMAPClient::move(int index, int toInstance, int fromInstance)
 {
-	//cout <<"move:("<<index<<","<<toInstance<<")<-("<<index<<","<<fromInstance<<")"<<endl;
 	server->clear(index, toInstance);
 	server->move(index, toInstance, fromInstance, indexSize[index]);
 	server->clear(index, fromInstance);
@@ -181,8 +132,10 @@ void OneChoiceSDdNoOMAPClient::move(int index, int toInstance, int fromInstance)
 	{
 		numNEW[index] = numNEW[index] + 1;
 		NEWsize[index] = 0;
-		KWsize[index] = 0;
 		P[index] = unordered_map<string, int>();
+		KWsize[index] = 0;
+		setk[index][0].clear();
+		setk[index][1].clear();
     	for (int j = 0; j < numberOfBins[index]; j++) 
 		{
         	Bins[index][j] = 0;
@@ -197,7 +150,7 @@ void OneChoiceSDdNoOMAPClient::appendTokwCounter(int index, prf_type keyVal, uns
 	encKeyVal = Utilities::encode(keyVal.data(), key);
 	int last = server->writeToKW(index, encKeyVal, KWsize[index]);
 	KWsize[index]=KWsize[index]+1;
-	//assert(last == KWsize[index]*AES_KEY_SIZE);
+	assert(last == KWsize[index]*AES_KEY_SIZE);
 }
 void OneChoiceSDdNoOMAPClient::append(int index, prf_type keyVal, unsigned char* key)
 {
@@ -206,7 +159,7 @@ void OneChoiceSDdNoOMAPClient::append(int index, prf_type keyVal, unsigned char*
 	encKeyVal = Utilities::encode(keyVal.data(), key);
 	int last = server->writeToNEW(index, encKeyVal, NEWsize[index]);
 	NEWsize[index]=NEWsize[index]+1;
-	//assert(last == NEWsize[index]*AES_KEY_SIZE);
+	assert(last == NEWsize[index]*AES_KEY_SIZE);
 }
 
 void OneChoiceSDdNoOMAPClient::destroy(int index, int instance)
@@ -225,75 +178,8 @@ void OneChoiceSDdNoOMAPClient::destroy(int index, int instance)
 }
 void OneChoiceSDdNoOMAPClient::resize(int index, int size)
 {
-	server->truncate(index,size, NEWsize[index]);
-	NEWsize[index]=size;
-}
-
-void OneChoiceSDdNoOMAPClient::addDummy(int index, int count, unsigned char* key , int s, int r1, int r2)
-{
-	cout<<"adding dummy at:"<<index<<":"<<NEWsize[index]<<"|"<<2*numberOfBins[index-1]*sizeOfEachBin[index-1]<<"s:"<<s<<endl;
-	assert(index>=1);
-	assert(count>=0);
-	cout <<"index:"<<index<<" "<<NEWsize[index]<<">="<<2*numberOfBins[index-1]*sizeOfEachBin[index-1]<<endl;
-	assert(NEWsize[index] >= 2*numberOfBins[index-1]*sizeOfEachBin[index-1]);
-    int upCnt = numNEW[index];
-	if(count+r1 == r2)
-	{
-		//assert(NEWsize[index] == 2*indexSize[index]+2*indexSize[index-1]);
-		int newSize = ceil((float)log2(2*indexSize[index]+2*indexSize[index-1]));
-		newSize = pow(2,newSize);
-		pad(index,newSize,key);
-		assert(newSize>=2*indexSize[index]);
-	}
-	else
-	{
-		for(int t = 0; t<s; t++)
-		{
-			int bin = count*s+t;
-			if(bin < numberOfBins[index])
-			{
-				//assert(NEWsize[index]<2*indexSize[index]+2*indexSize[index-1]);
-				int cbin = 0;
-				//string cb = (omaps[index]->find(getBid(to_string(bin),upCnt)));
-				//if(cb == "")
-				//	cbin = 0;
-				//else 
-					//cbin = stoi(cb);
-				assert(cbin <= sizeOfEachBin[index]);
-				for(int k = cbin; k<sizeOfEachBin[index]; k++)
-				{
-					prf_type value;
-    				memset(value.data(), 0, AES_KEY_SIZE);
-    				*(int*) (&(value.data()[AES_KEY_SIZE - 5])) = INF;//dummy-id
-		    		value.data()[AES_KEY_SIZE - 6] = (byte) (OP::INS);//op
-    				*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = bin;//bin
-					append(index, value, key); // double insertion for bitonic sort in future 
-					//string ob = omaps[index]->incrementCnt(getBid(to_string(bin),upCnt));
-				}
-				for(int k = cbin; k<sizeOfEachBin[index]; k++)
-				{
-					prf_type value;
-    				memset(value.data(), 0, AES_KEY_SIZE);
-    				*(int*) (&(value.data()[AES_KEY_SIZE - 5])) = INF;//dummy-id
-		    		value.data()[AES_KEY_SIZE - 6] = (byte) (OP::INS);//op
-    				*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = INF;//bin
-					append(index, value, key); // double insertion for bitonic sort in future 
-					//string ob = omaps[index]->incrementCnt(getBid(to_string(bin),upCnt));
-				}
-				for(int k = 0; k<cbin ; k++)
-				{ 
-					prf_type value;
-    				memset(value.data(), 0, AES_KEY_SIZE);
-    				*(int*) (&(value.data()[AES_KEY_SIZE - 5])) = INF;//id
-		    		value.data()[AES_KEY_SIZE - 6] = (byte) (OP::INS);//op
-    				*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = INF;//bin
-					append(index, value, key);
-					append(index, value, key);
-					//**dummy omap access here
-				}
-			}
-		}
-	}
+	server->truncate(index, size, NEWsize[index]);
+	NEWsize[index] = size;
 }
 
 void OneChoiceSDdNoOMAPClient::pad(int index, int newSize, unsigned char* key)
@@ -310,28 +196,44 @@ void OneChoiceSDdNoOMAPClient::pad(int index, int newSize, unsigned char* key)
 			value.data()[AES_KEY_SIZE - 6] = (byte) (OP::INS);//op
     		*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = INF;//bin
 			append(index, value, key);
-			//**dummy omap access here
 		}
 	}
-	//**will have to deamortize it later**//
-	//updateCounters(index, key);
-}
-
-void OneChoiceSDdNoOMAPClient::updateOMAP(int index, string keyword, unsigned char* key)
-{
-	int upCnt = numNEW[index];
-	//string ob = omaps[index]->incrementCnt(getBid(keyword,upCnt));
 }
 
 void OneChoiceSDdNoOMAPClient::updateHashTable(int index, unsigned char* key)
 {
-	vector<prf_type> some = server->getNEW(index, 0, pow(2,index), false);
+	//vector<prf_type> some = server->getNEW(index, 0, pow(2,index), false);
+	//cout <<"updating HT:"<<index<<endl;
+	unordered_map<string, int> pIndex = P[index];
 	map <prf_type, prf_type> kcc;
+	for(auto p: pIndex)
+	{
+		prf_type K = Utilities::encode(p.first, key);
+		unsigned char cntstr[AES_KEY_SIZE];
+		memset(cntstr, 0, AES_KEY_SIZE);
+		*(int*) (&(cntstr[AES_KEY_SIZE - 5])) = -1; // here add the PRP
+		prf_type mapKey = Utilities::generatePRF(cntstr, K.data());
+		prf_type valueTmp;
+		*(int*) (&(valueTmp[0])) = p.second;
+		prf_type mapValue = Utilities::encode(valueTmp.data(), K.data());
+		kcc[mapKey] = mapValue; 
+		/*
+		prf_type keyVal;
+    	memset(keyVal.data(), 0, AES_KEY_SIZE);
+	   	std::copy((p.first).begin(), (p.first).end(), keyVal.begin());
+	   	*(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = p.second; 
+	   	*(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = p.second;//here goes the PRP later
+		appendTokwCounter(index, keyVal, key);
+		*/
+		//cout<<index<<" uh:"<<p.first<<"->"<<p.second<<endl;
+	}
+	vector<prf_type> some = server->getNEW(index, 0, KWsize[index], false);
 	for(auto c: some)
 	{
 	    prf_type plaintext;// = c;
 	    Utilities::decode(c, plaintext, key);
 	    string w((char*) plaintext.data());
+		cout <<index<<"["<<w<<"]"<<endl;
 	    int cntw = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 5]));
 	    //int prp = ((byte) plaintext.data()[AES_KEY_SIZE - 11]); 
 		prf_type K = Utilities::encode(w, key);
@@ -339,128 +241,31 @@ void OneChoiceSDdNoOMAPClient::updateHashTable(int index, unsigned char* key)
 		memset(cntstr, 0, AES_KEY_SIZE);
 		*(int*) (&(cntstr[AES_KEY_SIZE - 5])) = -1; // here add the PRP
 		prf_type mapKey = Utilities::generatePRF(cntstr, K.data());
-		prf_type valueTmp, totalTmp;
+		prf_type valueTmp;
 		*(int*) (&(valueTmp[0])) = cntw;
 		prf_type mapValue = Utilities::encode(valueTmp.data(), K.data());
 		kcc[mapKey] = mapValue; 
 	}
 	server->storeKwCounters(index, 3, kcc);
-
-}
-void OneChoiceSDdNoOMAPClient::kwCount(int index, unsigned char* key, int count, int r1, int r2)
-{
-	int upCnt = numNEW[index];
-	int totalSteps = r2-r1+1;
-	int size = ceil((float)NEWsize[index]/(float)(totalSteps));
-	vector<prf_type> all= server->getNEW(index, count, size, true);
-	for(auto c: all)
-	{
-	    prf_type plaintext;// = c;
-	    Utilities::decode(c, plaintext, key);
-	    string w((char*) plaintext.data());
-		int cntw = 0;
-		//if(w!="")
-			//cntw = stoi(omaps[index]->find(getBid(w, upCnt)));
-	    prf_type keyVal;
-    	memset(keyVal.data(), 0, AES_KEY_SIZE);
-	    std::copy(w.begin(), w.end(), keyVal.begin());
-	    *(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = cntw; 
-	    *(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = cntw;//here goes the PRP later
-		appendTokwCounter(index, keyVal,key);
-	}
-	if(count==r2)
-	{
-		int ks = KWsize[index];
-		int ns = NEWsize[index];
-		cout <<ns<<"|"<<ns<<endl;
-		if(ks<ns)
-		{
-			for(int k = ks; k<ns ; k++)
-			{ 
-				prf_type value;
-	    		memset(value.data(), 0, AES_KEY_SIZE);
-	    		*(int*) (&(value.data()[AES_KEY_SIZE - 5])) = 0;
-	    		*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = 0;
-				appendTokwCounter(index, value, key);
-				//**dummy omap access here
-			}
-		}
-	}
 }
 
-/*
-void OneChoiceSDdNoOMAPClient::updateCounters(int index, unsigned char* key, int count, int r1, int r2)
+
+void OneChoiceSDdNoOMAPClient::updateCounters(string w, unsigned char* key)
 {
-	//cout <<"updCo:("<<index<<")"<<endl;
-	int upCnt = numNEW[index];
-	int totalSteps = r2-r1+1;
-	int size = ceil((float)NEWsize[index]/(float)(totalSteps));
-	vector<prf_type> all= server->getNEW(index, count, size, true);
+	//cout <<"updating HT:0"<<endl;
 	map <prf_type, prf_type> kcc;
-	for(auto c: all)
-	{
-	    prf_type plaintext;// = c;
-	    Utilities::decode(c, plaintext, key);
-	    string w((char*) plaintext.data());
-		//if(w!="")
-		//{
-			int cntw = stoi(omaps[index]->find(getBid(w, upCnt)));
-			prf_type K = Utilities::encode(w, key);
-			unsigned char cntstr[AES_KEY_SIZE];
-			memset(cntstr, 0, AES_KEY_SIZE);
-			*(int*) (&(cntstr[AES_KEY_SIZE - 5])) = -1; // here add the PRP
-			prf_type mapKey = Utilities::generatePRF(cntstr, K.data());
-			prf_type valueTmp, totalTmp;
-			*(int*) (&(valueTmp[0])) = cntw;
-			if(w=="")
-				*(int*) (&(valueTmp[0])) = 0;
-			prf_type mapValue = Utilities::encode(valueTmp.data(), K.data());
-			kcc[mapKey] = mapValue; 
-		//}
-	}
-	server->storeKwCounters(index, 3, kcc);
-}
-*/
-
-void OneChoiceSDdNoOMAPClient::updateCounters(int index, unsigned char* key)
-{
-	int upCnt = numNEW[index];
-	vector<prf_type> all= server->getNEW(index, 0, NEWsize[index], true);
-	map <prf_type, prf_type> kcc;
-	for(auto c: all)
-	{
-	    prf_type plaintext;// = c;
-	    Utilities::decode(c, plaintext, key);
-	    string w((char*) plaintext.data());
-		if(w!="")
-		{
-			int cntw = 0;
-			//stoi(omaps[index]->find(getBid(w, upCnt)));
-			prf_type K = Utilities::encode(w, key);
-			unsigned char cntstr[AES_KEY_SIZE];
-			memset(cntstr, 0, AES_KEY_SIZE);
-			*(int*) (&(cntstr[AES_KEY_SIZE - 5])) = -1;
-			prf_type mapKey = Utilities::generatePRF(cntstr, K.data());
-			prf_type valueTmp, totalTmp;
-			*(int*) (&(valueTmp[0])) = cntw;
-			prf_type mapValue = Utilities::encode(valueTmp.data(), K.data());
-			kcc[mapKey] = mapValue; 
-		}
-	}
-	//pad with dummy omap access
-	server->storeKwCounters(index, 3, kcc);
+	prf_type K = Utilities::encode(w, key);
+	unsigned char cntstr[AES_KEY_SIZE];
+	memset(cntstr, 0, AES_KEY_SIZE);
+	*(int*) (&(cntstr[AES_KEY_SIZE - 5])) = -1;
+	prf_type mapKey = Utilities::generatePRF(cntstr, K.data());
+	prf_type valueTmp;
+	*(int*) (&(valueTmp[0])) = 1;
+	prf_type mapValue = Utilities::encode(valueTmp.data(), K.data());
+	kcc[mapKey] = mapValue; 
+	server->storeKwCounters(0, 3, kcc);
 }
 
-
-Bid OneChoiceSDdNoOMAPClient::getBid(string input, int cnt) 
-{
-    std::array< uint8_t, ID_SIZE> value;
-    std::fill(value.begin(), value.end(), 0);
-    std::copy(input.begin(), input.end(), value.begin());
-    *(int*) (&value[AES_KEY_SIZE - 4]) = cnt; 
-    Bid res(value);
-    return res;
-}
 int OneChoiceSDdNoOMAPClient::hashKey(string w, int cnt, int index, unsigned char* key)
 {
 	if(w=="")
@@ -478,7 +283,6 @@ int OneChoiceSDdNoOMAPClient::hashKey(string w, int cnt, int index, unsigned cha
 
 bool cmpp(prf_type &a, prf_type &b)
 {
-	//cout <<"cmp:["<<a.second.size()<< " "<<b.second.size()<<"]["<<(a.second.size() > b.second.size()) <<"]"<<endl;
     int bina = *(int*) (&(a.data()[AES_KEY_SIZE - 11]));
     int binb = *(int*) (&(b.data()[AES_KEY_SIZE - 11]));
 	return (bina < binb);
@@ -673,33 +477,9 @@ void OneChoiceSDdNoOMAPClient::deAmortizedBitSort(int step, int count, int size,
 	server->putNEW(index, 3, encNEW);
 }
 
-
-
-	/*for(auto a : A)
-	{
-    	int bina = *(int*) (&(a.data()[AES_KEY_SIZE - 11]));
-		cout <<"{"<<bina<<"}";
-	}
- for (int i = 0; i < A.size(); i++)
- {
-        for (int j = 0; j < A.size() - i - 1; j++)
-		{
-    		int bina = *(int*) (&(A[j].data()[AES_KEY_SIZE - 11]));
-    		int binb = *(int*) (&(A[j+1].data()[AES_KEY_SIZE - 11]));
-            if (bina>binb)
-			{
-				prf_type temp;
-				temp = A[j];
-				A[j] = A[j+1];
-				A[j+1] = temp;
-			}
-		}
-}
-return A;
-}
-*/
 void OneChoiceSDdNoOMAPClient::nonOblSort(int index, unsigned char* key)
 {
+	//cout <<"sorting:"<< index<<endl;
 	vector<prf_type> encNEWi = server->getNEW(index,0, NEWsize[index],true);
 	int newSize = pow(2,floor((float)log2(2*indexSize[index]+2*indexSize[index-1])));
 	assert(encNEWi.size() == NEWsize[index]);
@@ -724,35 +504,13 @@ void OneChoiceSDdNoOMAPClient::nonOblSort(int index, unsigned char* key)
 		}
 		server->putNEW(index, 3, encNEWi);
 	}
-	/*
-	vector<prf_type> sortedNEW = server->getNEW(index);
-	vector<prf_type> decodedNEWi;	
-	for(auto n : sortedNEW)
-	{
-		prf_type dec;// = n;
-	    Utilities::decode(n, dec, key);
-		decodedNEWi.push_back(dec);
-	}
-	for(int i = 0; i<numberOfBins[index]; i++)
-	{
-		for(int j = 0; j<sizeOfEachBin[index]; j++)
-		{
-			int k = i*sizeOfEachBin[index]+j;
-			prf_type val = decodedNEWi[k];
-			int bina = *(int*) (&(val.data()[AES_KEY_SIZE - 11]));
-			assert(bina == i);
-		}
-	}*/
-	//else
-	//	cout <<"ALREADY SORTED:"<<index<<endl;
-	//assert(issorted(encNEWi));
 }
 int OneChoiceSDdNoOMAPClient::getNEWsize(int index)
 {
 	return NEWsize[index];
 }
 
-void OneChoiceSDdNoOMAPClient::Phase1(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key0, unsigned char* key1)
+void OneChoiceSDdNoOMAPClient::Phase1(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key)
 {
 	unordered_map<string, int> pIndex = P[index];
 	for(int instance = 0; instance < 2; instance++)
@@ -761,25 +519,33 @@ void OneChoiceSDdNoOMAPClient::Phase1(int index, int binNumber, int numberOfBins
 		int numOfElements = numberOfBins*sizeOfEachBin[index-1];
 		vector<prf_type> ciphers = server->getElements(index-1, instance, start, numOfElements);
 		assert(ciphers.size() == numOfElements);
-		unsigned char* key = (instance == 0) ? key0 : key1;
 		vector<string> setw;
 		vector<prf_type> prfsetw;
 		for(prf_type c: ciphers)
 		{
-			prf_type plaintext=c;
-		    //Utilities::decode(c, plaintext, key);  //UNcomment it later
-			int cntw = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 16]));
+			prf_type plaintext;//=c;
+		    Utilities::decode(c, plaintext, key);  //UNcomment it later
 			string w((char*) plaintext.data());
-			setw.push_back(w);
-			prfsetw.push_back(plaintext);
-			if(cntw == 1)
-				setk[index][instance].insert(w);
+			if(w!="")
+			{
+				setw.push_back(w);
+				prfsetw.push_back(plaintext);
+				int cntw = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 16]));
+				if(cntw == 1)
+				{
+					setk[index][instance].insert(w);
+					//cout <<"ph 1: index:"<< index<< " instance:"<< instance<< " cipherssize:"<< 
+					//		ciphers.size()<< " cntw:"<<cntw<<" setk size:"<<setk[index][instance].size()<<
+					//		" setw size:"<<setw.size()<<endl;	
+				}
+			}
 		}
 		vector<string> temp(setk[index][instance].size());
+		std::sort (setw.begin(),setw.end());
 		vector<string>::iterator diff1;
 		diff1 = std::set_difference(setk[index][instance].begin(), setk[index][instance].end(), setw.begin(), setw.end(), temp.begin());
 		int otherInstance = (instance+1)%2;
-		for(auto it = temp.begin(); it != diff1; ++it)
+		for(auto it = temp.begin(); it != diff1; it++)
 		{
 			setk[index][instance].erase(*it);
 			if(setk[index][otherInstance].find(*it) == setk[index][otherInstance].end())
@@ -790,6 +556,7 @@ void OneChoiceSDdNoOMAPClient::Phase1(int index, int binNumber, int numberOfBins
 	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = pIndex[*it]; 
 	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = pIndex[*it];//here goes the PRP later
 				appendTokwCounter(index, keyVal, keynew);
+				cout<<index<<" ph1:"<<*it<<"->"<<pIndex[*it]<<endl;
 				pIndex.erase(*it);
 			}
 		}
@@ -805,13 +572,25 @@ void OneChoiceSDdNoOMAPClient::Phase1(int index, int binNumber, int numberOfBins
 				prf_type keyVal;
 				createKeyVal(setw[p], ind, op, cntkw, newbin, keyVal);
 				append(index, keyVal, keynew);
+				//cout <<"Phase 1 writing to new:"<<index<<" ns:"<<NEWsize[index]<<"("<<setw[p]<<")"<<endl;
+				assert(NEWsize[index]<=2*pow(2,index-1));
 			}
 		}
 	}
+	/*
+	for(auto a: setk[index][0])
+	{
+		cout<<"p1:"<<index<<"["<<a<<"]"<<endl;
+	}
+	for(auto a: setk[index][1])
+	{
+		cout<<"p1:"<<index<<"("<<a<<")"<<endl;
+	}
+	*/
 	P[index] = pIndex;
 }
 
-void OneChoiceSDdNoOMAPClient::Phase2(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key0, unsigned char* key1)
+void OneChoiceSDdNoOMAPClient::Phase2(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key)
 {
 	unordered_map<string, int> pIndex = P[index];
 	for(int instance = 0; instance < 2; instance++)
@@ -819,49 +598,39 @@ void OneChoiceSDdNoOMAPClient::Phase2(int index, int binNumber, int numberOfBins
 		int start = binNumber*sizeOfEachBin[index-1];
 		int numOfElements = numberOfBins*sizeOfEachBin[index-1];
 		vector<prf_type> ciphers = server->getElements(index-1, instance, start, numOfElements);
-		cout <<index<<" ciphersize:"<<ciphers.size()<<" "<<numOfElements<<" nob:"<<numberOfBins<<endl;
 		assert(ciphers.size() == numOfElements);
-		unsigned char* key = (instance == 0) ? key0 : key1;
 		set<string> setw1;
 		vector<string> setw;
 		vector<prf_type> prfsetw;
 		for(prf_type c: ciphers)
 		{
-			prf_type plaintext=c;
-		    //Utilities::decode(c, plaintext, key);  //UNcomment it later
-			int ind = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 5]));
-			int op = ((byte) plaintext.data()[AES_KEY_SIZE - 6]); 
-			int oldbin = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 11]));
-			int cntw = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 16]));
+			prf_type plaintext;
+		    Utilities::decode(c, plaintext, key);  //UNcomment it later
 			string w((char*) plaintext.data());
-			if(cntw == 1)
-				setw1.insert(w);
-			else 
+			if(w!="")
 			{
-				setw.push_back(w);
-				prfsetw.push_back(plaintext);
+				int ind = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 5]));
+				int op = ((byte) plaintext.data()[AES_KEY_SIZE - 6]); 
+				int oldbin = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 11]));
+				int cntw = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 16]));
+				if(cntw == 1)
+				{
+					setw1.insert(w);
+					setk[index][instance].erase(w); //
+				}
+				else
+				{
+					setw.push_back(w);
+					prfsetw.push_back(plaintext);
+				}
 			}
 		}
-		vector<string> temp(setw.size());
-		vector<string>::iterator diff1;
-		diff1 = std::set_difference(setw.begin(), setw.end(), setw1.begin(), setw1.end(), temp.begin());
-		int otherInstance = (instance+1)%2;
-		for(auto kw : temp )
-		{
-			if(setk[index][instance].find(kw) != setk[index][instance].end())
-			{
-				int cntkw = pIndex[kw]+1;	
-				pIndex[kw]= cntkw;
-				int newbin = hashKey(kw, cntkw, index, keynew);
-				prf_type keyVal; // how do I get these??
-				//createKeyVal(*kw, ind, op, cntkw, newbin, keyVal);
-				append(index, keyVal, keynew);
-			}
-		}
+		std::sort (setw.begin(),setw.end());
 		vector<string> temp2(setk[index][instance].size());
 		vector<string>::iterator diff2;
 		diff2 = std::set_difference(setk[index][instance].begin(), setk[index][instance].end(), setw.begin(), setw.end(), temp2.begin());
-		for(auto it = temp2.begin(); it != diff2; ++it)
+		int otherInstance = (instance+1)%2;
+		for(auto it = temp2.begin(); it != diff2; it++)
 		{
 			setk[index][instance].erase(*it);
 			if(setk[index][otherInstance].find(*it) == setk[index][otherInstance].end())
@@ -872,22 +641,64 @@ void OneChoiceSDdNoOMAPClient::Phase2(int index, int binNumber, int numberOfBins
 	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 5])) = pIndex[*it]; 
 	   			*(int*) (&(keyVal.data()[AES_KEY_SIZE - 11])) = pIndex[*it];//here goes the PRP later
 				appendTokwCounter(index, keyVal, keynew);
+				cout<<index<<" ph2:"<<*it<<"->"<<pIndex[*it]<<endl;
 				pIndex.erase(*it);
 			}
 		}
+		for(int kw = 0; kw < setw.size(); kw++)
+		{
+			if(setw1.find(setw[kw]) ==  setw1.end())
+			{
+				int oldcntw = *(int*) (&(prfsetw[kw].data()[AES_KEY_SIZE - 16]));
+
+				if(setk[index][instance].find(setw[kw]) != setk[index][instance].end() && 
+					oldcntw <= sizeOfEachBin[index-1])
+				{
+					int cntkw = pIndex[setw[kw]]+1;	
+					pIndex[setw[kw]]= cntkw;
+					int ind = *(int*) (&(prfsetw[kw].data()[AES_KEY_SIZE - 5]));
+					int op = ((byte) prfsetw[kw].data()[AES_KEY_SIZE - 6]); 
+					int newbin = hashKey(setw[kw], cntkw, index, keynew);
+					assert(oldcntw!=1);
+					assert(oldcntw <= sizeOfEachBin[index-1]);
+					prf_type keyVal;
+					createKeyVal(setw[kw], ind, op, cntkw, newbin, keyVal);
+					append(index, keyVal, keynew);
+					//cout <<"Phase 2 writing to new:"<<index<<" ns:"<<NEWsize[index]<<"("<<setw[kw]<<")"<<endl;
+					assert(NEWsize[index]<=2*pow(2,index-1));
+				}
+			}
+		}
 	}
+	/*for(auto a: pIndex)
+	{
+		cout<<"pp:["<<a.first<<"]->"<<a.second<<endl;
+	}*/
 	P[index] = pIndex;
 }
 
-void OneChoiceSDdNoOMAPClient::LinearScanBinCount(int index, int binNumber, int numOfBins, unsigned char* key)
+void OneChoiceSDdNoOMAPClient::LinearScanBinCount(int index, int count, int numOfBins, unsigned char* key)
 {
-	int start = 2*binNumber*sizeOfEachBin[index-1];
-	int readLength = 2*numOfBins*sizeOfEachBin[index-1];
+	int limit = ceil((float)NEWsize[index]/(float)(pow(2,index-1)));
+
+	int start = count*limit;
+	int readLength;
+	if(index<=3)
+		readLength = NEWsize[index];
+	else
+	{
+		readLength = limit;
+		if(start+limit > NEWsize[index])
+			limit = NEWsize[index]-start;
+	}
+	assert(start+limit <= NEWsize[index]);
 	vector<prf_type> some = server->getNEW(index, start, readLength, true);
+	assert((numOfBins == numberOfBins[index-1]) || (numOfBins == 1));
+	//cout << "Linear Scan:"<<index<<endl;
 	for(auto c: some)
 	{
-		prf_type plaintext = c;
-		//Utilities::decode(c, plaintext, key);  //UNcomment it later
+		prf_type plaintext;// = c;
+		Utilities::decode(c, plaintext, key);  //UNcomment it later
 		int bin = *(int*) (&(plaintext.data()[AES_KEY_SIZE - 11]));
 		Bins[index][bin] = Bins[index][bin]+1;
 	}
@@ -898,6 +709,7 @@ void OneChoiceSDdNoOMAPClient::addDummy(int index, int bin, int numOfBins, unsig
 	for(int b = bin ; b < bin+numOfBins ; b++)
 	{
 		int cbin = Bins[index][b];
+		//cout <<"addDummy to bin:"<<b<<" = "<<cbin<<"/"<<sizeOfEachBin[index]<<endl;
 		for(int k = cbin ; k < sizeOfEachBin[index] ; k++)
 		{
 			prf_type value;
@@ -905,6 +717,7 @@ void OneChoiceSDdNoOMAPClient::addDummy(int index, int bin, int numOfBins, unsig
 	    	*(int*) (&(value.data()[AES_KEY_SIZE - 5])) = INF;//dummy-id
 			value.data()[AES_KEY_SIZE - 6] = (byte) (OP::INS);//op
 	    	*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = b;//bin
+			//cout <<"addDummy real writing to new:"<<index<<endl;
 			append(index, value, key); 
 		}
 		for(int k = 0; k < cbin ; k++)
@@ -914,12 +727,14 @@ void OneChoiceSDdNoOMAPClient::addDummy(int index, int bin, int numOfBins, unsig
 	    	*(int*) (&(value.data()[AES_KEY_SIZE - 5])) = INF;//id
 			value.data()[AES_KEY_SIZE - 6] = (byte) (OP::INS);//op
 	    	*(int*) (&(value.data()[AES_KEY_SIZE - 11])) = INF;//bin
+			//cout <<"addDummy dummy writing to new:"<<index<<endl;
 			append(index, value, key);
 		}
 	}
 	if((bin == numberOfBins[index]-1) || (index <= 3))
 	{
 		int powOf2Size = pow(2, ceil((float)log2(NEWsize[index]))); 
+		//cout <<"addDummy  PAD writing to new:"<<index<<"("<<NEWsize[index]<<"/"<<powOf2Size<<")"<<endl;
 		pad(index, powOf2Size, key);
 	}
 }
@@ -928,7 +743,7 @@ void OneChoiceSDdNoOMAPClient::deAmortizedBitSort()
 {
 }
 
-void OneChoiceSDdNoOMAPClient::createKeyVal(string keyword, int ind, int op, int cntw, int newbin, prf_type& keyVal)
+void OneChoiceSDdNoOMAPClient::createKeyVal(string keyword, int ind, int op, int cntw, int newbin,prf_type& keyVal)
 {
     memset(keyVal.data(), 0, AES_KEY_SIZE);
     std::copy(keyword.begin(), keyword.end(), keyVal.begin());//keyword

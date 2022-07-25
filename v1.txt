@@ -11,708 +11,96 @@ Start of Static
  
  
  
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:1:1:2:3:4:2
- 
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:1:1:2:3:4:2
- 
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-5 ciphersize:24 24 nob:1
-5 ciphersize:24 24 nob:1
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-5 ciphersize:24 24 nob:1
-5 ciphersize:24 24 nob:1
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-3 ciphersize:12 12 nob:2
-3 ciphersize:12 12 nob:2
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-5 ciphersize:24 24 nob:1
-5 ciphersize:24 24 nob:1
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-5 ciphersize:24 24 nob:1
-5 ciphersize:24 24 nob:1
-index:4:2:4:6:8:16
-4 ciphersize:14 14 nob:1
-4 ciphersize:14 14 nob:1
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-2 ciphersize:2 2 nob:1
-2 ciphersize:2 2 nob:1
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
- 
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-index:5:2:4:6:9:32
-index:4:2:4:6:8:16
-index:3:2:4:6:8:8
-index:2:1:2:3:5:4
-index:1:1:2:3:4:2
-1 ciphersize:1 1 nob:1
-1 ciphersize:1 1 nob:1
----------------------
-Result of Operations for DB Size 100
-Search for Keyword With 1 Result and 0 Deletions:
-Search Computation Time (microseconds):21845
-Search Communication Size (Bytes):0
-Number of return item:0
----------------------
-Result of Operations for DB Size 100
-Search for Keyword With 2 Result and 0 Deletions:
-Search Computation Time (microseconds):2710
-Search Communication Size (Bytes):0
-Number of return item:0
----------------------
-Result of Operations for DB Size 100
-Search for Keyword With 3 Result and 1 Deletions:
-Search Computation Time (microseconds):10894
-Search Communication Size (Bytes):0
-Number of return item:0
-************
+ph 1: index:1 instance:0cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ph 1: index:1 instance:1cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ 
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº!™þŽçrÉôn£Z‰Vá
+1 here::2
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åºÿ©n`jÖÄË¡ÒÜX´$a@8in%
+1 here::2
+ 
+ph 1: index:1 instance:0cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ph 1: index:1 instance:1cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ 
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº{u­>{øÂÔ/ õ8
+û
+1 here::2
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº_]ÜqEñL©àµÊ1GŽ$a@8in%
+1 here::2
+ 
+ph 1: index:2 instance:0cipherssize:2 cntw:1
+ph 1: index:2 instance:0cipherssize:2 cntw:2
+Phase 1 writing to new:2
+Phase 1 writing to new:2
+ph 1: index:2 instance:1cipherssize:2 cntw:1
+ph 1: index:2 instance:1cipherssize:2 cntw:2
+Phase 1 writing to new:2
+Phase 1 writing to new:2
+ph 1: index:1 instance:0cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ph 1: index:1 instance:1cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ 
+2 here:4
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº!™þŽçrÉôn£Z‰Vá
+2 here::4
+2 here:4
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº‚Õá{ëTæM2@	#
+2 here::4
+2 here:4
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº¸Ÿ­âª¢)ÄBW1½6H$a@8in%
+2 here::4
+2 here:4
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åºø]!9>.áþ¯MõÌµ)$$a@8in%
+2 here::4
+addDummy  writing to new:2
+addDummy  writing to new:2
+addDummy  writing to new:2
+addDummy  writing to new:2
+addDummy  writing to new:2
+addDummy  writing to new:2
+addDummy  writing to new:2
+addDummy  writing to new:2
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯ÅºGÞ-õç@gZ>ƒQÔféKÔïŠ,;ˆLúYÊ4+.÷•½JRâž×Óú é¼¡ömÝó@
+1 here::2
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº	¿T1$KÆÏ×Š§±æ$a@8in%
+1 here::2
+ 
+ph 1: index:1 instance:0cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ph 1: index:1 instance:1cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ 
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åº:y´©ù=WDáS(ŒÄÛÿ
+1 here::2
+1 here:2
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯Åºàwy«+c¥RSý{$a@8in%
+1 here::2
+ 
+ph 1: index:2 instance:0cipherssize:2 cntw:1
+ph 1: index:2 instance:0cipherssize:2 cntw:2
+Phase 1 writing to new:2
+Phase 1 writing to new:2
+ph 1: index:2 instance:1cipherssize:2 cntw:1
+ph 1: index:2 instance:1cipherssize:2 cntw:2
+Phase 1 writing to new:2
+Phase 1 writing to new:2
+ph 1: index:1 instance:0cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ph 1: index:1 instance:1cipherssize:1 cntw:1
+Phase 1 writing to new:1
+ 
+2 here:4
+›œÁfÍlm®ä×ø÷™Jý®þBƒFô·ç‡«Y´CTåÊpÜ‡>ŠùÒ¯ÅºGÞ-õç@gZ>ƒQÔ
+2 here::4

@@ -50,8 +50,7 @@ public:
 	vector<vector<set<string>>> setk;
     void destry(int index);
     void setup(int index, unordered_map<string, vector<prf_type> >pairs, unsigned char* key);
-    vector<prf_type> search(int index, int instance, string keyword, unsigned char* key);
-	vector<prf_type> NIsearch(int index, int instance, string keyword, unsigned char* key);
+	vector<prf_type> search(int index, int instance, string keyword, unsigned char* key);
     vector<prf_type> getAllData(int index, int instance, unsigned char* key);
 	void move(int index, int toInstance, int fromInstance);
 	void copy(int index, int toInstance);
@@ -73,14 +72,12 @@ public:
     int getNEWsize(int index);
 	void pad(int index, int newSize, unsigned char* key);
 	void updateCounters(int index, unsigned char* key);
-	void updateCounters(int index, unsigned char* key, int count, int r1, int r2);
-	void kwCount(int index, unsigned char* key, int count, int r1, int r2);
-	void updateOMAP(int index, string keyword, unsigned char* key);
+	void updateCounters(string kw, unsigned char* key);
 	bool sorted(int index, unsigned char* key);
 
 	///SDd without OMAP
-	void Phase1(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key0, unsigned char* key1);
-	void Phase2(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key0, unsigned char* key1);
+	void Phase1(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key);
+	void Phase2(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key);
 	void LinearScanBinCount(int index, int binNumber, int numberOfBins, unsigned char* key);
 	void addDummy(int index, int binNumber, int numberOfBins, unsigned char* key);
 	void deAmortizedBitSort();
