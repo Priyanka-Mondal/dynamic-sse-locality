@@ -176,10 +176,12 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 				L->updateHashTable(i, keys[i][1]);
 				//L->resize(i,indexSize[i]); 
 				L->move(i-1,0,2); 
+				updateKey(i,0,1);
 				L->destroy(i-1,1);
 				if(!(L->exist[i][0]))
 				{
 					L->move(i,0,3);
+					updateKey(i,0,1);
 				}
 				else if(!(L->exist[i][1]))
 				{
@@ -193,7 +195,6 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 				{
 					L->move(i,2,3);
 				}
-				//L->destroy(i,3);
 				cnt[i] = 0;
 			}
 		}
@@ -205,6 +206,7 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 	if(!(L->exist[0][0]))
 	{
 		L->move(0,0,3);
+		updateKey(0,0,1);
 	}
 	else if(!(L->exist[0][1]))
 	{
@@ -218,8 +220,6 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 	{
 		L->move(0,2,3);
 	}
-	//L->destroy(0,3);
-    //updateCounter++;
 }
 
 void DeAmortizedSDdNoOMAP::updateKey(int index, int toInstance , int fromInstance)
@@ -293,7 +293,8 @@ vector<int> DeAmortizedSDdNoOMAP::search(string keyword)
 			//cout <<"("<<id<<":"<<op<<")";
 		//}
     }
-	cout <<endl<<"size of add:"<<add.size()<<"/"<<ressize<<endl;
+	//cout <<endl<<"size of add:"<<add.size()<<"/"<<ressize<<endl;
+	cout <<endl<<"size of add:"<<add.size()<<endl;
     for (auto const& cur : add) 
 	{
         if (cur.second < 0) 

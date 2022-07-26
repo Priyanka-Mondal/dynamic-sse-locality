@@ -101,12 +101,11 @@ vector<prf_type> OneChoiceSDdNoOMAPClient::search(int index, int instance, strin
     if (profile) 
         Utilities::startTimer(65);
     vector<prf_type> finalRes;
-    int keywordCnt = 0;
 	prf_type K = Utilities::encode(keyword, key);
 	int keywordCount = server->getCounter(index, instance, K);
 	if(keywordCount>0)
 	{
-		cout<<"("<<index<<","<<instance<<")"<<" kwCnt:"<<keywordCount<<" size of bin:"<<sizeOfEachBin[index]<<" #bin:"<<numberOfBins[index]<<"---"<<endl;
+		//cout<<"("<<index<<","<<instance<<")"<<" kwCnt:"<<keywordCount<<" size of bin:"<<sizeOfEachBin[index]<<" #bin:"<<numberOfBins[index]<<"---"<<endl;
 		vector<prf_type> ciphers = server->search(index, instance, K, keywordCount);
 		totalCommunication += ciphers.size() * sizeof (prf_type) ;
 		for (auto item : ciphers) 
@@ -118,6 +117,8 @@ vector<prf_type> OneChoiceSDdNoOMAPClient::search(int index, int instance, strin
 	   	    	finalRes.push_back(plaintext);
 	   		}
 		}
+	cout<<"("<<index<<","<<instance<<"):"<<keywordCount<<"/"<<finalRes.size()<<endl;
+	assert(keywordCount == finalRes.size());
 	}
     if (profile) 
 	{
@@ -175,6 +176,7 @@ void OneChoiceSDdNoOMAPClient::appendTokwCounter(int index, prf_type keyVal, uns
 	KWsize[index]=KWsize[index]+1;
 	assert(last == KWsize[index]*AES_KEY_SIZE);
 }
+
 void OneChoiceSDdNoOMAPClient::append(int index, prf_type keyVal, unsigned char* key)
 {
 	exist[index][3] = true;
@@ -669,10 +671,9 @@ void OneChoiceSDdNoOMAPClient::LinearScanBinCount(int index, int count, unsigned
 		if(start + limit > NEWsize[index])
 			readLength = NEWsize[index]-start;
 	}
-	readLength = NEWsize[index]; ////COMMENT
 	if(readLength>0)
 	{
-		cout <<"ns:"<<NEWsize[index]<<"/"<<2*pow(2,index-1)<<endl;
+		//cout <<"ns:"<<NEWsize[index]<<"/"<<2*pow(2,index-1)<<endl;
 		assert(NEWsize[index] == 2*pow(2,index-1));
 		assert(start + readLength <= NEWsize[index]);
 		vector<prf_type> someCiphers = server->getNEW(index, start, readLength, true);
