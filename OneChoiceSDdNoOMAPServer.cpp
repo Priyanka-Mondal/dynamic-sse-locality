@@ -123,7 +123,6 @@ void OneChoiceSDdNoOMAPServer::move(int index, int toInstance, int fromInstance,
 	assert(data.size()==size);
 	storage->insertAll(index, toInstance, data);
 	map<prf_type,prf_type> wordCount;
-	//cout <<"get all data from counters:"<<index<<"|"<<fromInstance<<" to"<<toInstance<<endl;
    	wordCount = keyworkCounters->getAllData(index, fromInstance);
 	keyworkCounters->insert(index, toInstance, wordCount);
 }
@@ -190,8 +189,11 @@ vector<prf_type> OneChoiceSDdNoOMAPServer::getElements(int index, int instance, 
 }
 
 vector< prf_type> OneChoiceSDdNoOMAPServer::getNEW(int index, int count, int size, bool NEW)
-{
-	return storage->getNEW(index, count, size, NEW);
+{	
+	if(NEW)
+		return storage->getNEW(index, count, size, NEW);
+	else
+		return storage->getNEW(index, count, size);
 }
 
 void OneChoiceSDdNoOMAPServer::putNEW(int index, int instance, vector<prf_type> sorted)//insertAll

@@ -39,7 +39,6 @@ public:
 	vector<int> indexSize;
 	prf_type nullKey;
 	int numOfIndices;
-	vector<int> numNEW;
 	vector<int> NEWsize;
 	vector<int> KWsize;
 	vector<unordered_map<string, int>> P;
@@ -78,7 +77,7 @@ public:
 	///SDd without OMAP
 	void Phase1(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key);
 	void Phase2(int index, int binNumber, int numberOfBins, unsigned char* keynew, unsigned char* key);
-	void LinearScanBinCount(int index, int binNumber, int numberOfBins, unsigned char* key);
+	void LinearScanBinCount(int index, int binNumber, unsigned char* key);
 	void addDummy(int index, int binNumber, int numberOfBins, unsigned char* key);
 	void deAmortizedBitSort();
 	void createKeyVal(string keyword, int ind, int op, int cntw, int newbin, prf_type& keyVal);

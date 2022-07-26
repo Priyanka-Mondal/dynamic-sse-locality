@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
             }
         }
         file.close();
-        Utilities::generateTestCases(testCases, keywordLength, time(NULL), testKeywords);
+        //Utilities::generateTestCases(testCases, keywordLength, time(NULL), testKeywords);
     }
 
     //    printf("keyword:%s\n",testCases[0].testKeywords[0].c_str());
@@ -88,11 +88,10 @@ int main(int argc, char** argv) {
                     cnt++;
                     if (cnt % 100 == 0) {
                         cout << "Initial Insertion:" << cnt << "/" << to_string(testCases[i].N) << endl;
+						//cout<<cur->first<<":"<<cur->second[j]<<endl;
                     }
                 }
             }
-
-
             cnt = 0;
             for (uint j = 0; j < testCases[i].Qs.size(); j++) {
                 auto item = testCases[i].filePairs[testCases[i].testKeywords[j]];
@@ -124,7 +123,7 @@ int main(int argc, char** argv) {
             cout << "Result of Operations for DB Size " << testCases[i].N << endl;
             auto item = testCases[i].filePairs[testCases[i].testKeywords[j]];
             //measuring search and update execution times
-            cout << "Search for Keyword With " << testCases[i].Qs[j] << " Result and " << testCases[i].delNumber[j] << " Deletions:" << endl;
+            cout << "Search for Keyword "<<testCases[i].testKeywords[j]<<" With " << testCases[i].Qs[j] << " Result and " << testCases[i].delNumber[j] << " Deletions:" << endl;
             for (int z = 0; z < 1; z++) {
                 Utilities::startTimer(500);
                 vector<int> res = client.search(testCases[i].testKeywords[j]);
@@ -132,7 +131,9 @@ int main(int argc, char** argv) {
                 cout << "Search Computation Time (microseconds):" << time << endl;
                 cout << "Search Communication Size (Bytes):" << client.getTotalSearchCommSize() << endl;
                 cout << "Number of return item:" << res.size() << endl;
-            }
+
+		//assert(testCases[i].Qs[j]-testCases[i].delNumber[j] == res.size());
+			}
             //            Utilities::startTimer(500);
             //            client.update(OP::DEL, testCases[i].testKeywords[j], item[0], false);
             //            time = Utilities::stopTimer(500);
@@ -143,6 +144,7 @@ int main(int argc, char** argv) {
             //            time = Utilities::stopTimer(500);
             //            cout << "Insertion Time:" << time << endl;
             //            cout << "Insertion Communication Size:" << client.getTotalUpdateCommSize() << endl;
+
 
         }
         cout << "************" << endl;

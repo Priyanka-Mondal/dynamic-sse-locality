@@ -44,6 +44,7 @@ public:
     void insertAll(int dataIndex, int instance, vector<prf_type> ciphers);
     vector<prf_type> getAllData(int dataIndex, int instance);
 	vector<prf_type> getNEW(int index, int count, int size, bool NEW);
+	vector<prf_type> getNEW(int index, int count, int size);
     void clear(int index, int instance);
     vector<prf_type> find(int index, int instance, prf_type mapKey, int cnt);
     vector<prf_type> searchBin(int index, int instance, int bin);

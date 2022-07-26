@@ -1,0 +1,7795 @@
+========Running SDd+OneChoice No OMAP==================
+Index:0 number of Bins:1 size of bin:1 is:1
+Index:1 number of Bins:1 size of bin:2 is:2
+Index:2 number of Bins:2 size of bin:6 is:12
+Index:3 number of Bins:2 size of bin:14 is:28
+Index:4 number of Bins:2 size of bin:24 is:48
+Index:5 number of Bins:3 size of bin:34 is:102
+Index:6 number of Bins:5 size of bin:46 is:230
+Index:7 number of Bins:7 size of bin:58 is:406
+Index:8 number of Bins:11 size of bin:72 is:792
+Index:9 number of Bins:18 size of bin:85 is:1530
+Index:10 number of Bins:31 size of bin:99 is:3069
+Start of Static
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+1 ph1
+1 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 ph2
+1 ph1
+1 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 non obl sort
+1 ph1
+1 ph2
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 ph2
+1 ph1
+1 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+4 non obl sort
+1 ph1
+1 ph2
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+Initial Insertion:100/700
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+Initial Insertion:200/700
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph1
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 ph1
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph1
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 ph2
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+Initial Insertion:300/700
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph1
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 ph1
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph1
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 ph2
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+Initial Insertion:400/700
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+Initial Insertion:500/700
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 ph1
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 ph1
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 ph1
+7 ph1
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+8 ph1
+7 ph1
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 ph1
+7 ph1
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 ph1
+7 ph2
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 ph1
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 ph2
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 ph2
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 ph2
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 ph2
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+Initial Insertion:600/700
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 non obl sort
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 ph1
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 ph1
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 ph1
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 ph1
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 ph2
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 ph2
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 linear scan
+8Linear Scan ended
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 add dummy
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 add dummy
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 linear scan
+5Linear Scan ended
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 add dummy
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+Initial Insertion:700/700
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 non obl sort
+5 non obl sort
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph1
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 ph1
+5 ph2
+4 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 ph2
+4 ph2
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 ph2
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 linear scan
+7Linear Scan ended
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 ph1
+1 ph2
+8 non obl sort
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 linear scan
+4Linear Scan ended
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 add dummy
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 ph1
+1 ph2
+8 non obl sort
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 non obl sort
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+8 non obl sort
+7 add dummy
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 ph1
+3 ph2
+2 ph1
+2 ph2
+1 ph1
+1 ph2
+8 non obl sort
+7 non obl sort
+6 linear scan
+6Linear Scan ended
+5 linear scan
+5Linear Scan ended
+4 ph1
+3 linear scan
+3Linear Scan ended
+3 add dummy
+3 nonobl
+2 linear scan
+2Linear Scan ended
+2 add dummy
+2 nonobl
+1 linear scan
+1Linear Scan ended
+1 add dummy
+1 nonobl
+---------------------
+Result of Operations for DB Size 700
+Search for Keyword J!ueJwj With 100 Result and 0 Deletions:
+(66:0)(75:0)(34:0)(43:0)(58:0)(51:0)(73:0)(76:0)(31:0)(25:0)(84:0)(47:0)(32:0)(27:0)(54:0)(61:0)(49:0)(45:0)(80:0)(83:0)(63:0)(64:0)(29:0)(79:0)(48:0)(57:0)(42:0)(37:0)(59:0)(86:0)(28:0)(50:0)(81:0)(33:0)(53:0)(77:0)(65:0)(85:0)(38:0)(24:0)(30:0)(74:0)(69:0)(55:0)(35:0)(60:0)(82:0)(70:0)(39:0)(46:0)(71:0)(78:0)(68:0)(56:0)(41:0)(44:0)(62:0)(52:0)(26:0)(87:0)(67:0)(40:0)(36:0)(72:0)(95:0)(92:0)(90:0)(99:0)(93:0)(96:0)(97:0)(94:0)(91:0)(88:0)(98:0)(89:0)(9:0)(15:0)(23:0)(5:0)(21:0)(16:0)(22:0)(18:0)(3:0)(10:0)(0:0)(13:0)(20:0)(6:0)(2:0)(7:0)(1:0)(4:0)(12:0)(19:0)(8:0)(17:0)(14:0)(11:0)
+size of add:100/100
+Search Computation Time (microseconds):43855
+Search Communication Size (Bytes):0
+Number of return item:100
+---------------------
+Result of Operations for DB Size 700
+Search for Keyword cgojyKJ With 30 Result and 0 Deletions:
+(22:0)(24:0)(27:0)(26:0)(16:0)(23:0)(17:0)(19:0)(20:0)(29:0)(28:0)(25:0)(18:0)(21:0)(6:0)(4:0)(8:0)(15:0)(10:0)(13:0)(12:0)(1:0)(9:0)(0:0)(5:0)(2:0)(14:0)(11:0)(3:0)(7:0)
+size of add:30/30
+Search Computation Time (microseconds):6403
+Search Communication Size (Bytes):0
+Number of return item:30
+---------------------
+Result of Operations for DB Size 700
+Search for Keyword h9NPJPk With 20 Result and 19 Deletions:
+(3:1)(7:1)(8:1)(13:1)(15:1)(19:1)(12:1)(18:1)(4:1)(14:1)(11:1)(10:1)(5:1)(16:1)(17:1)(1:1)(6:1)(9:1)(2:1)(9:0)(6:0)(16:0)(13:0)(4:0)(3:0)(14:0)(0:0)(10:0)(5:0)(1:0)(17:0)(2:0)(11:0)(12:0)(7:0)(8:0)(15:0)(18:0)
+size of add:20/38
+Search Computation Time (microseconds):7577
+Search Communication Size (Bytes):0
+Number of return item:1
+---------------------
+Result of Operations for DB Size 700
+Search for Keyword Jvl7^Zr With 10 Result and 1 Deletions:
+(1:1)(5:0)(6:0)(3:0)(1:0)(9:0)(8:0)(4:0)(0:0)(2:0)(7:0)
+size of add:10/11
+Search Computation Time (microseconds):5165
+Search Communication Size (Bytes):0
+Number of return item:9
+************

@@ -12,12 +12,12 @@
 #define ID_SIZE 16
 #define S 4
 #define B 1
-#define INF 9999999
+#define INF 999999
 
 using byte_t = uint8_t;
 using block = std::vector<byte_t>;
 
-#define AES_KEY_SIZE 64
+#define AES_KEY_SIZE 32
 #define TMP_AES_KEY_SIZE 16
 
 typedef std::array<uint8_t, AES_KEY_SIZE> prf_type;

@@ -125,37 +125,47 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 				assert(2*t+pow(2,i-1)+m<pow(2,i));
 				if(0 <= cnt[i] && cnt[i] < t)
 				{
+					//cout <<i <<" ph1"<<endl;
 					L->Phase1(i, cnt[i], 1, keys[i][1], keys[i-1][0]);
 				}
 				else if(t <= cnt[i] && cnt[i] < 2*t)
 				{
+					//cout <<i <<" ph2"<<endl;
 					L->Phase2(i, cnt[i]-t, 1, keys[i][1], keys[i-1][0]);
 				}
 				else if (2*t <= cnt[i] && cnt[i] < 2*t+pow(2,i-1))
 				{
-					L->LinearScanBinCount(i, cnt[i]-2*t, 1, keys[i][1]);
+					//cout <<i <<" linear scan"<<endl;
+					L->LinearScanBinCount(i, cnt[i]-2*t, keys[i][1]);
 				}
 				else if(2*t+pow(2,i-1) <= cnt[i] && cnt[i] < 2*t+pow(2,i-1)+m)
 				{
+					//cout <<i <<" add dummy"<<endl;
 					L->addDummy(i, cnt[i]-(2*t+pow(2,i-1)), 1, keys[i][1]);
 				}
 				else if (2*t+pow(2,i-1)+m <= cnt[i] && cnt[i] < pow(2,i))
 				{
+					//cout <<i <<" non obl sort"<<endl;
 					L->nonOblSort(i, keys[i][1]);
 					//L->deAmortizedBitSort(i, cnt[i]-(3*t+m), keys[i][1]);   
 				}
 			}
-			else if(i<=3)
+			else
 			{
 				if(cnt[i] == 0)
 				{
+					//cout <<i <<" ph1"<<endl;
 					L->Phase1(i, 0, numberOfBins[i-1], keys[i][1], keys[i-1][0]);
+					//cout <<i <<" ph2"<<endl;
 					L->Phase2(i, 0, numberOfBins[i-1], keys[i][1], keys[i-1][0]);
 				}
 				else if (cnt[i] == 1)
 				{
-					L->LinearScanBinCount(i, 0, numberOfBins[i-1], keys[i][1]);
+					//cout <<i <<" linear scan"<<endl;
+					L->LinearScanBinCount(i, 0, keys[i][1]);
+					//cout <<i <<" add dummy"<<endl;
 					L->addDummy(i, 0, numberOfBins[i], keys[i][1]);
+					//cout <<i <<" nonobl"<<endl;
 					L->nonOblSort(i, keys[i][1]);
 					//L->deAmortizedBitSort();
 				}
@@ -164,14 +174,12 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 			if(cnt[i] == pow(2,i))
 			{
 				L->updateHashTable(i, keys[i][1]);
-				L->resize(i,indexSize[i]); 
+				//L->resize(i,indexSize[i]); 
 				L->move(i-1,0,2); 
-				updateKey(i-1,0,1);
 				L->destroy(i-1,1);
 				if(!(L->exist[i][0]))
 				{
 					L->move(i,0,3);
-					updateKey(i,0,1);
 				}
 				else if(!(L->exist[i][1]))
 				{
@@ -184,7 +192,6 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 				else
 				{
 					L->move(i,2,3);
-					//updateKey(i,1,1);
 				}
 				//L->destroy(i,3);
 				cnt[i] = 0;
@@ -198,7 +205,6 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 	if(!(L->exist[0][0]))
 	{
 		L->move(0,0,3);
-		updateKey(0,0,1);
 	}
 	else if(!(L->exist[0][1]))
 	{
@@ -211,10 +217,9 @@ void DeAmortizedSDdNoOMAP::update(OP op, string keyword, int ind, bool setup)
 	else
 	{
 		L->move(0,2,3);
-		//updateKey(0,1,1);
 	}
 	//L->destroy(0,3);
-    updateCounter++;
+    //updateCounter++;
 }
 
 void DeAmortizedSDdNoOMAP::updateKey(int index, int toInstance , int fromInstance)
@@ -262,7 +267,7 @@ vector<int> DeAmortizedSDdNoOMAP::search(string keyword)
             if (L->exist[i][j]) 
 			{
 				//cout <<"searching at:["<<i<<"]["<<j<<"]"<<endl;
-				int k = j == 2? 1 : 0;
+				int k = j == 2 ? 1 : 0;
                 auto tmpRes = L->search(i, j, keyword, keys[i][k]);
                 encIndexes.insert(encIndexes.end(), tmpRes.begin(), tmpRes.end());
             }
@@ -280,13 +285,13 @@ vector<int> DeAmortizedSDdNoOMAP::search(string keyword)
 			add[id] = -1;
 		if(op == 1)
 			remove[id] = 1;
-		add[id]=add[id]+remove[id];
+		add[id] = add[id] + remove[id];
         //remove[id] += (2 *op - 1);
-	    if ((strcmp((char*) decodedString.data(), keyword.data()) == 0)) 
-		{
-			ressize++;
-			cout <<"("<<id<<":"<<op<<")";
-		}
+	    //if ((strcmp((char*) decodedString.data(), keyword.data()) == 0)) 
+		//{
+		//	ressize++;
+			//cout <<"("<<id<<":"<<op<<")";
+		//}
     }
 	cout <<endl<<"size of add:"<<add.size()<<"/"<<ressize<<endl;
     for (auto const& cur : add) 
@@ -303,11 +308,6 @@ vector<int> DeAmortizedSDdNoOMAP::search(string keyword)
 
 void DeAmortizedSDdNoOMAP::endSetup() 
 {
-//    for (unsigned int i = 0; i < setupOMAPS.size(); i++) 
-//	{
-//        omaps[i]->setDummy(setupOMAPSDummies[i]);
-//        omaps[i]->setupInsert(setupOMAPS[i]);
-//    }
 }
 double DeAmortizedSDdNoOMAP::getTotalSearchCommSize() const {
 //    return totalSearchCommSize;

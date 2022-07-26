@@ -10,20 +10,12 @@ OneChoiceSDdNoOMAPStorage::OneChoiceSDdNoOMAPStorage(bool inMemory, int dataInde
     this->profile = profile;
     memset(nullKey.data(), 0, AES_KEY_SIZE);
 	b = ceil((float)log2(B));
-	int prev = 0;
-    int	cprev = 0;
     for (int i = 0; i <= dataIndex; i++) 
 	{
 		int j = i + b;
         int curNumberOfBins = j > 1 ? 
 			(int) ceil(((float) pow(2, j))/(float)(log2(pow(2, j))*log2(log2(pow(2, j))))) : 1;
         int curSizeOfEachBin = j > 1 ? 3*(log2(pow(2, j))*(log2(log2(pow(2, j))))) : pow(2,j);
-		/*if(curSizeOfEachBin*curNumberOfBins <= 2*prev*cprev)
-		{
-			curNumberOfBins = ceil((float)(2*prev*cprev+1)/(float)curSizeOfEachBin);
-		}
-		cprev = curSizeOfEachBin;
-		prev = curNumberOfBins;*/
         numberOfBins.push_back(curNumberOfBins);
         sizeOfEachBin.push_back(curSizeOfEachBin);
 		int is = curNumberOfBins*curSizeOfEachBin;
@@ -97,15 +89,14 @@ void OneChoiceSDdNoOMAPStorage::insertAll(int index, int instance, vector<prf_ty
     	file.open(fileCounter[index].c_str(), ios::binary | ios::out);
     if (file.fail()) 
         cerr << "Error in insert: " <<strerror(errno)<<endl;
-	
     file.seekg(0, ios::beg);
 	SeekG++;
     for (auto ci : ciphers) 
 	{
-            unsigned char newRecord[AES_KEY_SIZE];
-            memset(newRecord, 0, AES_KEY_SIZE);
-            std::copy(ci.begin(), ci.end(), newRecord);
-            file.write((char*) newRecord, AES_KEY_SIZE);
+       unsigned char newRecord[AES_KEY_SIZE];
+       memset(newRecord, 0, AES_KEY_SIZE);
+       std::copy(ci.begin(), ci.end(), newRecord);
+       file.write((char*) newRecord, AES_KEY_SIZE);
     }
     file.close();
 }
@@ -127,26 +118,17 @@ vector<prf_type> OneChoiceSDdNoOMAPStorage::getAllData(int index, int instance)
 	{
         prf_type tmp;
         std::copy(keyValues+i*AES_KEY_SIZE, keyValues+i*AES_KEY_SIZE+AES_KEY_SIZE, tmp.begin());
-        //if (tmp != nullKey) 
-		//{
-            results.push_back(tmp);
-			//if(index == 1)
-			//cout <<index<<" getAll:["<<tmp.data()<<"]"<<endl;
-        //}
+        results.push_back(tmp);
     }
     delete keyValues;
     return results;
 }
 
-
-vector<prf_type> OneChoiceSDdNoOMAPStorage::getNEW(int index, int cnt, int ressize, bool NEW) //get all of NEW
+vector<prf_type> OneChoiceSDdNoOMAPStorage::getNEW(int index, int cnt, int ressize) //get all of NEW
 {
     vector<prf_type> results;
 	fstream file;
-	if(NEW)
-    	file.open(filenames[index][3].c_str(), ios::binary | ios::in);
-	else
-    	file.open(fileCounter[index].c_str(), ios::binary | ios::in);
+    file.open(fileCounter[index].c_str(), ios::binary | ios::in);
     if (file.fail()) 
         cerr << "Error in read: " << strerror(errno);
 	int readPos = cnt*AES_KEY_SIZE;
@@ -170,6 +152,36 @@ vector<prf_type> OneChoiceSDdNoOMAPStorage::getNEW(int index, int cnt, int ressi
 		//{
             results.push_back(tmp);
         //}
+    }
+    delete keyValues;
+    return results;
+}
+
+vector<prf_type> OneChoiceSDdNoOMAPStorage::getNEW(int index, int cnt, int ressize, bool NEW) 
+{
+    vector<prf_type> results;
+	fstream file;
+    file.open(filenames[index][3].c_str(), ios::binary | ios::in);
+    if (file.fail()) 
+        cerr << "Error in read: " << strerror(errno);
+	int readPos = cnt*AES_KEY_SIZE;
+    file.seekg(0, ios::end);
+	SeekG++;
+	int filesize = file.tellg();
+	int remainder = filesize - readPos;
+	int readSize = AES_KEY_SIZE * ressize;
+	if(readSize > remainder)
+		readSize = remainder;
+    file.seekg(readPos, ios::beg);
+	SeekG++;
+    char* keyValues = new char[readSize];
+    file.read(keyValues, readSize);
+    file.close();
+    for (int i = 0; i < readSize/AES_KEY_SIZE; i++) 
+	{
+        prf_type tmp;
+        std::copy(keyValues+i*AES_KEY_SIZE, keyValues+i*AES_KEY_SIZE+AES_KEY_SIZE, tmp.begin());
+        results.push_back(tmp);
     }
     delete keyValues;
     return results;
@@ -225,6 +237,7 @@ int OneChoiceSDdNoOMAPStorage::writeToNEW(int index, prf_type keyVal, int pos)
 	file.close();
 	return last;
 }
+
 vector<prf_type> OneChoiceSDdNoOMAPStorage::getElements(int index, int instance, int start, int numOfEl)
 {
 	assert(instance<2);

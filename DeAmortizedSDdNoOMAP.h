@@ -66,7 +66,7 @@ public:
     double getTotalSearchCommSize() const;
     double getTotalUpdateCommSize() const;
     void updateKey(int index, int toInstance , int fromInstance);
-		void beginSetup();
+	void beginSetup();
     //int numberOfBins(int i);
 };
 
